@@ -11,7 +11,7 @@ import {
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen bg-[#0a192f]'>
+    <div name='home' className='w-full bg-[#0a192f] overflow-hidden'>
       {/* Container */}
       <div className='relative md:flex flex-row justify-between md:pt-40 pt-24 px-4 max-w-7xl mx-auto'>
             <div className='max-w-[900px] px-8 flex flex-col justify-center'>
@@ -25,12 +25,11 @@ const Home = () => {
                 <p className='text-[#8892b0] py-4 max-w-[700px]'>
                 I'm focused on building responsive web apps with cool people for small & online business.
                 </p>
-                <div>
-                <div className='flex justify-betw een i tems-center w-full'>
-                    <button className='text-white border-2 border-gray-600 px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-white'>
+                <div className='flex w-full'>
+                    <button className='text-white text-xs border-2 border-gray-600 px-2 py-2 my-2 flex items-center hover:bg-yellow-600 hover:border-white'>
                         View Projects
                     </button>
-                    <div class="lg:hidden inline-flex text-2xl space-x-3 ml-4 mt-5">
+                    <div class="lg:hidden inline-flex text-2xl space-x-3 ml-8 mt-4">
                             <a href="https://www.twitter.com/iamsegunajibola">
                                 <FaTwitter size={30} className='text-blue-500' />
                             </a>
@@ -47,7 +46,6 @@ const Home = () => {
                                 <FaLinkedin className='bg- white text-blue-500' size={30} />
                             </a>
                     </div>
-                </div>
                 </div>
             </div>
             <div className='flex flex-shrink-0 justify-center sp:pb-0 md:pb-0 items-center'>
