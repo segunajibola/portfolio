@@ -18,33 +18,36 @@ const Navbar = () => {
 
   return (
     <div className='fixed z-10 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
-      </div>
+        
+        {/* <li className='py-6 text-4xl'> */}
+            <Link className="cursor-pointer" to='home' smooth={true} duration={500}>
+            <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
+            </Link>
+        {/* </li> */}
 
       {/* menu */}
       <ul className='hidden md:flex'>
-        <li className='mx-8'>
+        <li className='mx-8 cursor-pointer'>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='mx-8'>
+        <li className='mx-8 cursor-pointer'>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className='mx-8'>
+        <li className='mx-8 cursor-pointer'>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className='mx-8'>
+        <li className='mx-8 cursor-pointer'>
           <Link to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className='mx-8'>
+        <li className='mx-8 cursor-pointer'>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
@@ -52,7 +55,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -65,31 +68,26 @@ const Navbar = () => {
         }
       >
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
