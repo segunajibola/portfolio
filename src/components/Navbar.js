@@ -26,23 +26,28 @@ const Navbar = () => {
         {/* </li> */}
 
       {/* menu */}
-      <ul className='hidden md:flex space-x-10'>
-        <li className='mx- 8 cursor-pointer'>
+      <ul className='hidden md:flex space-x-10 mr-4 text-sm'>
+        <li className='cursor-pointer'>
+            <Link to='home' smooth={true} duration={500}>
+                Home
+            </Link>
+        </li>
+        <li className='cursor-pointer'>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className='mx- 8 cursor-pointer'>
+        <li className='cursor-pointer'>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className='mx- 8 cursor-pointer'>
+        <li className='cursor-pointer'>
           <Link to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className='mx- 8 cursor-pointer'>
+        <li className='cursor-pointer'>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
