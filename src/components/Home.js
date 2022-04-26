@@ -1,6 +1,13 @@
 import React from 'react';
 import profileImg from '../assets/newPr.png';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import {
+    FaWhatsapp,
+    FaGithub,
+    FaLinkedin,
+    FaInstagram,
+    FaTwitter,
+  } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -19,12 +26,28 @@ const Home = () => {
                 I'm focused on building responsive web apps with cool people for small & online business.
                 </p>
                 <div>
-                <button className='text-white group border-2 border-gray-600 px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-white'>
-                    View Projects
-                    <span className='group-hover:rotate-90 duration-300'>
-                    <HiArrowNarrowRight className='ml-3' />
-                    </span>
-                </button>
+                <div className='flex justify-betw een i tems-center w-full'>
+                    <button className='text-white border-2 border-gray-600 px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-white'>
+                        View Projects
+                    </button>
+                    <div class="lg:hidden inline-flex text-2xl space-x-3 ml-4 mt-5">
+                            <a href="https://www.twitter.com/iamsegunajibola">
+                                <FaTwitter size={30} className='text-blue-500' />
+                            </a>
+                            <a href="https://www.instagram.com/iamsegunajibola">
+                                <FaInstagram size={30} className='text-red-300' />
+                            </a>
+                            <a href="https://wwww.github.com/segunajibola">
+                                <FaGithub size={30} className='text-white' />
+                            </a>
+                            <a href="https://wa.me/2348105729893">
+                                <FaWhatsapp size={30} className='text-green-500' />
+                            </a>
+                            <a href="https://wwww.github.com/segunajibola">
+                                <FaLinkedin className='bg- white text-blue-500' size={30} />
+                            </a>
+                    </div>
+                </div>
                 </div>
             </div>
             <div className='flex flex-shrink-0 justify-center sp:pb-0 md:pb-0 items-center'>
