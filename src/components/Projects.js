@@ -12,6 +12,20 @@ const Projects = () => {
           </p>
         </div>
 
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div class="bg-yellow-600 rounded-3xl shadow-lg">
+              <a href="https://videvafashionline.vercel.app"><img src="images/vfl.png" alt="" class="rounded-t-2xl object-cover w-full h-80"/></a>
+              <div class="p-8 rounded-b-3xl">
+                  <h3 class="font-bold text-2xl">Videva Fashion Line</h3>
+                  <p class="pt-3">
+                      Fashion design website.
+                  </p>
+                  <p class="mt-5"><span class="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                  <a href="https://videvafashionline.vercel.app" class="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i class="text-black fas fa-globe"></i></a>
+                  <a href="https://github.com/segunajibola/VidevaFashionLine" class="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <i class="text-black fab fa-github"></i></a>
+              </div>
+          </div>
+        </div>
 {/* Container */}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
