@@ -8,17 +8,17 @@ import {
 
 const Projects = () => {
   return (
-    <div name='projects' className='w-full md:h-screen text-gray-300 pt-20 bg-[#0a192f]'>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='absolute md:mb-32 md:pb-48 mb-96 -mt-10 pb-96 pl-4'>
-          <p className='opacity-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
+    <div name='projects' className='w-full md:h-screen text-gray-300 pt-10 bg-[#0a192f]'>
+      <div className='relati ve max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='absolute md:mb-28 md:pb-48 mb-96 -mt-10 pb-96 pl-4'>
+          <p className='opacit y-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
             Projects
           </p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 mt-96 pt-36 md:grid-cols-2 lg:grid-cols-3 gap-6'>
         <div className="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover w-full h-80"/></a>
+              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-60"/></a>
               <div className="p-8 rounded-b-3xl">
                   <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
                   <p className="pt-3">
@@ -57,53 +57,9 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div
-            style={{ backgroundImage: `url(${realEstate})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          
             {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${projectsImg})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Demo
-                  </button>
-                </a>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          
           <div
             style={{ backgroundImage: `url(${realEstate})` }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
