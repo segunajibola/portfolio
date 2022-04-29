@@ -8,6 +8,7 @@ import {
     FaInstagram,
     FaTwitter,
   } from 'react-icons/fa';
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
                 </p>
                 <div className='flex w-full'>
                     <button className='text-white text-xs border-2 border-gray-600 px-2 py-2 my-2 flex items-center hover:bg-yellow-600 hover:border-white'>
-                        View Projects
+                        <Link className="cursor-pointer" to='projects' smooth={true} duration={500}>View Projects</Link>
                     </button>
                     <div class="lg:hidden inline-flex text-2xl space-x-3 ml-8 mt-4">
                             <a href="https://www.twitter.com/iamsegunajibola">
