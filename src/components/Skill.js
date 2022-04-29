@@ -13,7 +13,7 @@ import Vercel from '../assets/vercel.png';
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full pt-96 md:pt-0 h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className='w-full pt-32 md:pt-0 md:h-screen bg-[#0a192f] text-gray-300'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
           <div className='absolute md:mb-32 md:pb-48 mb-96 -mt-10 pb-96 pl-4'>

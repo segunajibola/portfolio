@@ -8,15 +8,15 @@ import {
 
 const Projects = () => {
   return (
-    <div name='projects' className='w-full md:h-screen text-gray-300 pt-10 bg-[#0a192f]'>
-      <div className='relati ve max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='absolute md:mb-28 md:pb-48 mb-96 -mt-10 pb-96 pl-4'>
-          <p className='opacit y-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
+    <div name='projects' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='absolute md:mb-28 md:pb-48 mb-96 -mt-36 pb-96 pl-4'>
+          <p className='opacity-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
             Projects
           </p>
         </div>
 
-        <div className='grid grid-cols-1 mt-96 pt-36 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 md:mt-96 mt-44 pt-10 md:grid-cols-2 lg:grid-cols-3 gap-6'>
         <div className="bg-yellow-600 rounded-3xl shadow-lg">
               <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-60"/></a>
               <div className="p-8 rounded-b-3xl">
