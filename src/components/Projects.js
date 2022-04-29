@@ -10,8 +10,8 @@ const Projects = () => {
   return (
     <div name='projects' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
       <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
-        <div className='relative mb-96 pb-96 pl-4'>
-          <p className='absolute opaci ty-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
+        <div className='relative pt-20 pl-4'>
+          <p className='absolute opacity-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
             Projects
           </p>
         </div>
