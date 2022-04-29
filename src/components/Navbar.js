@@ -17,7 +17,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed z-10 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='fixed z-20 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
         
         {/* <li className='py-6 text-4xl'> */}
             <Link className="cursor-pointer" to='home' smooth={true} duration={500}>
@@ -55,7 +55,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
+      <div onClick={handleClick} className='md:hidden z-30 cursor-pointer'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full z-20 h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl'>

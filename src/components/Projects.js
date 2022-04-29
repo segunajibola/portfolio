@@ -9,7 +9,7 @@ import {
 const Projects = () => {
   return (
     <div name='projects' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+      <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
         <div className='absolute md:mb-16 md:pb-40 mb-96 -mt-36 pb-96 pl-4'>
           <p className='opacity-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
             Projects

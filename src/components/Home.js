@@ -14,7 +14,7 @@ const Home = () => {
     <div name='home' className='w-full bg-[#0a192f] overflow-hidden'>
       {/* Container */}
       <div className='relative md:flex flex-row justify-between md:pt-40 pt-24 px-4 max-w-7xl mx-auto'>
-            <div className='max-w-[900px] px-8 flex flex-col justify-center'>
+            <div className='max-w-[950px] px-8 flex flex-col justify-center'>
                 <p className='text-yellow-600 text-2xl'>Hi, my name is</p>
                 <h1 className='md:text-4xl text-5xl mb-4 font-bold text-[#ccd6f6]'>
                 Segun Ajibola
