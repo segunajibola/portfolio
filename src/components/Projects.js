@@ -2,6 +2,9 @@ import React from 'react';
 import projectsImg from '../assets/projectsImg.jpeg';
 import Vfl from '../assets/vfl.png';
 import realEstate from '../assets/realestate.jpg';
+import {
+  FaGithub,
+} from 'react-icons/fa';
 
 const Projects = () => {
   return (
@@ -14,16 +17,16 @@ const Projects = () => {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-        <div class="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" class="rounded-t-2xl object-cover w-full h-80"/></a>
-              <div class="p-8 rounded-b-3xl">
-                  <h3 class="font-bold text-2xl">Videva Fashion Line</h3>
-                  <p class="pt-3">
+        <div className="bg-yellow-600 rounded-3xl shadow-lg">
+              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover w-full h-80"/></a>
+              <div className="p-8 rounded-b-3xl">
+                  <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
+                  <p className="pt-3">
                       Fashion design website.
                   </p>
-                  <p class="mt-5"><span class="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i class="text-black fas fa-globe"></i></a>
-                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <i class="text-black fab fa-github"></i></a>
+                  <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
+                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block mx-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
               </div>
           </div>
         </div>
