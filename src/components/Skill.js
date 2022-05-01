@@ -17,7 +17,7 @@ const Skills = () => {
       {/* Container */}
       <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
           <div className='absolute md:mb-32 md:pb-48 mb-96 -mt-10 pb-96 pl-4'>
-              <p className='opacity-10 text-8xl font-bold inline border-b-4 border-yellow-600'>Skills</p>
+              <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600'>Skills</p>
           </div>
 
           <div className='w-full z-10 grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-10'>

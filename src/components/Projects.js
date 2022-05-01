@@ -4,98 +4,96 @@ import Vfl from '../assets/vfl.png';
 import realEstate from '../assets/realestate.jpg';
 import {
   FaGithub,
+  FaGlobe
 } from 'react-icons/fa';
 
 const Projects = () => {
   return (
-    <div name='projects' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+    <div name='projects' className='w-full text-gray-300 bg-[#0a192f]'>
       <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
         <div className='relative pt-20 pl-4'>
-          <p className='absolute opacity-10 text-8xl font-bold inline border-b-4 border-yellow-600'>
+          <p className='absolute opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600'>
             Projects
           </p>
         </div>
-
-        <div className='grid grid-cols-1 pt-20 md:pt-32 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 pt-20 md:-mt-5 md:pt-32 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           <div className="bg-yellow-600 rounded-3xl shadow-lg">
                 <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
-                <div className="p-6 rounded-b-3xl">
+                <div className="p-3">
                     <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
-                    <p className="pt-3">
+                    <p className="pt-2">
                         Fashion design website.
                     </p>
-                    <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
-                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
+                    <p className="mt-2"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
+                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={15} className='inline mb-1 text-black' /></a>
                 </div>
             </div>
 
             <div className="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
-              <div className="p-6 rounded-b-3xl">
-                  <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
-                  <p className="pt-3">
-                      Fashion design website.
-                  </p>
-                  <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
-                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
-              </div>
-          </div>
+                <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
+                <div className="p-3">
+                    <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
+                    <p className="pt-2">
+                        Fashion design website.
+                    </p>
+                    <p className="mt-2"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
+                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={15} className='inline mb-1 text-black' /></a>
+                </div>
+            </div>
 
-          <div className="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
-              <div className="p-6 rounded-b-3xl">
-                  <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
-                  <p className="pt-3">
-                      Fashion design website.
-                  </p>
-                  <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
-                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
-              </div>
-          </div>
+            <div className="bg-yellow-600 rounded-3xl shadow-lg">
+                <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
+                <div className="p-3">
+                    <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
+                    <p className="pt-2">
+                        Fashion design website.
+                    </p>
+                    <p className="mt-2"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
+                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={15} className='inline mb-1 text-black' /></a>
+                </div>
+            </div>
 
-          <div className="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
-              <div className="p-6 rounded-b-3xl">
-                  <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
-                  <p className="pt-3">
-                      Fashion design website.
-                  </p>
-                  <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
-                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
-              </div>
-          </div>
+            <div className="bg-yellow-600 rounded-3xl shadow-lg">
+                <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
+                <div className="p-3">
+                    <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
+                    <p className="pt-2">
+                        Fashion design website.
+                    </p>
+                    <p className="mt-2"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
+                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={15} className='inline mb-1 text-black' /></a>
+                </div>
+            </div>
 
-          <div className="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
-              <div className="p-6 rounded-b-3xl">
-                  <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
-                  <p className="pt-3">
-                      Fashion design website.
-                  </p>
-                  <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
-                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
-              </div>
-          </div>
+            <div className="bg-yellow-600 rounded-3xl shadow-lg">
+                <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
+                <div className="p-3">
+                    <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
+                    <p className="pt-2">
+                        Fashion design website.
+                    </p>
+                    <p className="mt-2"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
+                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={15} className='inline mb-1 text-black' /></a>
+                </div>
+            </div>
 
-          <div className="bg-yellow-600 rounded-3xl shadow-lg">
-              <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
-              <div className="p-6 rounded-b-3xl">
-                  <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
-                  <p className="pt-3">
-                      Fashion design website.
-                  </p>
-                  <p className="mt-5"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
-                  <a href="https://videvafashionline.vercel.app" className="inline-block mt-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <i className="text-black fas fa-globe"></i></a>
-                  <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={17} className='inline text-black' /></a>
-              </div>
-          </div>
-
-          
+            <div className="bg-yellow-600 rounded-3xl shadow-lg">
+                <a href="https://videvafashionline.vercel.app"><img src={Vfl} alt="" className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
+                <div className="p-3">
+                    <h3 className="font-bold text-2xl">Videva Fashion Line</h3>
+                    <p className="pt-2">
+                        Fashion design website.
+                    </p>
+                    <p className="mt-2"><span className="font-semibold">Project stack: </span>HTML, Tailwindcss & Vanilla JavaScript</p>
+                    <a href="https://videvafashionline.vercel.app" className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
+                    <a href="https://github.com/segunajibola/VidevaFashionLine" className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View On Github <FaGithub size={15} className='inline mb-1 text-black' /></a>
+                </div>
+            </div>
 
         </div>
       </div>
