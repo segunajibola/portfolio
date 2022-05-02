@@ -1,7 +1,4 @@
-import React from 'react';
-import data from "../data/projectData.js";
-import Vfl from '../assets/vfl.png';
-import realEstate from '../assets/realestate.jpg';
+import data from "../data/projects.js";
 import {
   FaGithub,
   FaGlobe

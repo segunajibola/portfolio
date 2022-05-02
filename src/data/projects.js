@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    image: "/projectsImage/vfl.png",
+    image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
     title: "Fashion design website",
@@ -10,8 +10,8 @@ const data = [
     github: "https://github.com/segunajibola/VidevaFashionLine"
   },
   {
-    id: 1,
-    image: "/projectsImage/vfl.png",    
+    id: 2,
+    image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
     title: "Fashion design website",
@@ -19,8 +19,8 @@ const data = [
     link: "https://videvafashionline.vercel.app", 
   },
   {
-    id: 1,
-    image: "/projectsImage/vfl.png",    
+    id: 3,
+    image: "/images/vfl.png",    
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
     title: "Fashion design website",
@@ -28,8 +28,8 @@ const data = [
     link: "https://videvafashionline.vercel.app", 
   },
   {
-    id: 1,
-    image: "/projectsImage/vfl.png",    
+    id: 4,
+    image: "/images/vfl.png",    
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
     title: "Fashion design website",
@@ -37,8 +37,8 @@ const data = [
     link: "https://videvafashionline.vercel.app", 
   },
   {
-    id: 1,
-    image: "/projectsImage/vfl.png",    
+    id: 5,
+    image: "/images/vfl.png",    
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
     title: "Fashion design website",
@@ -46,8 +46,8 @@ const data = [
     link: "https://videvafashionline.vercel.app", 
   },
   {
-    id: 1,
-    image: "/projectsImage/vfl.png",    
+    id: 6,
+    image: "/images/vfl.png",    
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
     title: "Fashion design website",

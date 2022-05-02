@@ -1,4 +1,3 @@
-import React from 'react';
 import profileImg from '../assets/newPr.png';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import {

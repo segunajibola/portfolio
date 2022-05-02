@@ -1,5 +1,4 @@
-import React from 'react'
-import shegzy from '../assets/shegzy.jpg';
+import data from "../data/testimonials.js";
 
 const Testimonials = () => {
   return (
@@ -11,60 +10,26 @@ const Testimonials = () => {
         </div>
     </div>
     <div className="md:grid grid-cols-3 gap-4">
-    <figure className="bg-gray-100 grid rounded-xl mt-5 p-8">
-        <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
-        <div className="pt-6 text-center space-y-4 text-gray-500">
-            <blockquote>
-                <p className="text-lg font-semibold text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea saepe quaerat quia est eius fugit.
-                </p>
-            </blockquote>
-            <figcaption className="font-medium">
-                <div className="">
-                    Sarah Dayan
-                </div>
-                <div className="">
-                    Staff Engineer, ABL
-                </div>
-            </figcaption>
-        </div>
-    </figure>
-    <figure className="bg-gray-100 grid rounded-xl mt-5 p-8">
-        <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
-        <div className="pt-6 text-center space-y-4 text-gray-500">
-            <blockquote>
-                <p className="text-lg font-semibold text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
-                </p>
-            </blockquote>
-            <figcaption className="font-medium">
-                <div className="">
-                    Sarah Dayan
-                </div>
-                <div className="">
-                    Staff Engineer, ABL
-                </div>
-            </figcaption>
-        </div>
-    </figure>
-    <figure className="bg-gray-100 grid rounded-xl mt-5 p-8">
-        <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
-        <div className="pt-6 text-center space-y-4 text-gray-500">
-            <blockquote>
-                <p className="text-lg font-semibold text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
-                </p>
-            </blockquote>
-            <figcaption className="font-medium">
-                <div className="">
-                    John Doe
-                </div>
-                <div className="">
-                    Staff Engineer, ABL
-                </div>
-            </figcaption>
-        </div>
-    </figure>
+        {data.map((testimonials) => (
+           <figure className="bg-gray-100 grid rounded-xl mt-5 p-8">
+           <img className="w-32 h-32 rounded-full mx-auto" src={testimonials.image} alt="" />
+           <div className="pt-6 text-center space-y-4 text-gray-500">
+               <blockquote>
+                   <p className="text-lg font-semibold text-gray-700">
+                       {testimonials.text}
+                   </p>
+               </blockquote>
+               <figcaption className="font-medium">
+                   <div className="">
+                       {testimonials.name}
+                   </div>
+                   <div className="">
+                       {testimonials.position}
+                   </div>
+               </figcaption>
+           </div>
+       </figure> 
+        ))}    
     </div>
 </section>
   )
