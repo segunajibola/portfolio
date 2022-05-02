@@ -28,8 +28,8 @@ const Navbar = () => {
       {/* menu */}
       <ul className='hidden md:flex space-x-10 mr-4 text-sm'>
         <li className='cursor-pointer'>
-            <Link to='home' smooth={true} duration={500}>
-                Home
+            <Link to='www.google.com' smooth={true} duration={500}>
+                Blog
             </Link>
         </li>
         <li className='cursor-pointer'>
@@ -45,6 +45,11 @@ const Navbar = () => {
         <li className='cursor-pointer'>
           <Link to='projects' smooth={true} duration={500}>
             Projects
+          </Link>
+        </li>
+        <li className='cursor-pointer'>
+          <Link to='projects' smooth={true} duration={500}>
+            Resume
           </Link>
         </li>
         <li className='cursor-pointer'>

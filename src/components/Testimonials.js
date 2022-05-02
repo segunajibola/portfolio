@@ -11,9 +11,9 @@ const Testimonials = () => {
     </div>
     <div className="md:grid grid-cols-3 gap-4">
         {data.map((testimonials) => (
-           <figure className="bg-gray-100 grid rounded-xl mt-5 p-8">
+           <figure className="bg-gray-100 grid rounded-xl mt-5 p-4  ">
            <img className="w-32 h-32 rounded-full mx-auto" src={testimonials.image} alt="" />
-           <div className="pt-6 text-center space-y-4 text-gray-500">
+           <div className="pt-6 text-center space-y-3 text-gray-500">
                <blockquote>
                    <p className="text-lg font-semibold text-gray-700">
                        {testimonials.text}
