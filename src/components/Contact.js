@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div name='contact' className='w-full bg-[#0a192f] flex flex-col justify-center items-center p-4 text-gray-300'>
+    <div name='contact' className='w-full text-gray-300 bg-[#0a192f]'>
+      <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
         <div className='relative pt-20 pl-4'>
             <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600'>Contact</p>
         </div>
@@ -12,6 +13,7 @@ const Contact = () => {
             <textarea className='bg-[#ccd6f6] rounded-lg p-2' name="message" rows="10" placeholder='Message'></textarea>
             <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
         </form>
+      </div>
     </div>
   )
 }

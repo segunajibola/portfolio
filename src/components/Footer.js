@@ -7,12 +7,11 @@ import {
     FaTwitter,
   } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import google from '../assets/playstore.png';
-import apple from '../assets/appstore.png';
 
 const Footer = () => {
   return (
     <footer className='w-full text-gray-300 bg-[#0a192f] md:mx-0'>
+        <hr />
         <div className='p-4'>
             <div className='mx-auto grid max-w-7xl grid-cols-2 gap-6 space-y-4 md:mx-2 md:grid-cols-4 '>
                 <div>
@@ -79,23 +78,6 @@ const Footer = () => {
                     </Link>
                     <Link to='https://www.instagram.com/iamsegunajibola'>
                         <FaInstagram size={30} className='text-red-300' />
-                    </Link>
-                </div>
-                <p className='mt-4'>Download Our App</p>
-                <div className=''>
-                    <Link to='/'>
-                    <img
-                        src={google}
-                        alt='Google playstore'
-                        className='inline h-8 w-16 md:w-20'
-                    />
-                    </Link>
-                    <Link to='/'>
-                    <img
-                        src={apple}
-                        alt='Appstore'
-                        className='md:w-26 inline h-11 w-24'
-                    />
                     </Link>
                 </div>
                 </div>
