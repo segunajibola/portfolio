@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div name='contact' className='w-full text-gray-300 bg-[#0a192f]'>
-      <div className='flex flex-col justify-center items-center w-full h-full md:pt-20'>
+      <div className='flex flex-col justify-center items-center w-full h-full pt-20'>
         {/* <div className='relative pt-20 pl-4'>
             <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600'>Contact</p>
         </div> */}
@@ -16,7 +16,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right mt-20 text-3xl font-bold'>
+          <div className='sm:text-right mt-20 text-2xl font-bold'>
             <p>Submit this form to send me an email.</p>
           </div>
           <form method='POST' action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c" className='relative flex flex-col max-w-[600px] w-full -mt-5 md:mt-16'>
