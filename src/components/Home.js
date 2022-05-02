@@ -44,7 +44,7 @@ const Home = () => {
                                 <FaWhatsapp size={30} className='text-green-500' />
                             </a>
                             <a href="https://wwww.github.com/segunajibola">
-                                <FaLinkedin className='bg- white text-blue-500' size={30} />
+                                <FaLinkedin className='text-blue-500' size={30} />
                             </a>
                     </div>
                 </div>

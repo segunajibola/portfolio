@@ -1,5 +1,4 @@
 import React from 'react'
-import realEstate from '../assets/realestate.jpg';
 import {
     FaWhatsapp,
     FaGithub,
@@ -8,6 +7,8 @@ import {
     FaTwitter,
   } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import google from '../assets/playstore.png';
+import apple from '../assets/appstore.png';
 
 const Footer = () => {
   return (
@@ -63,37 +64,35 @@ const Footer = () => {
                 <h5 className='mb-1 text-lg font-semibold dark:text-gray-200'>
                     Connect
                 </h5>
-                <Link to='https://www.twitter.com/'>
-                    <FaTwitter size={30} className='text-blue-500' />
-                </Link>
-                <Link to='https://www.facebook.com/'>
-                    <FontAwesomeIcon
-                    className='mt-1 mr-3 text-lg text-blue-800'
-                    icon={faFacebook}
-                    />
-                </Link>
-                <Link to='https://wa.me/'>
-                <FaInstagram size={30} className='text-red-300' />
-
-                </Link>
-                <Link to='https://www.instagram.com/'>
-                    <FontAwesomeIcon
-                    className='mt-1 mr-3 text-lg text-green-800'
-                    icon={faWhatsapp}
-                    />
-                </Link>
+                <div className='flex gap-3'>
+                    <Link to='https://www.twitter.com/iamsegunajibola'>
+                        <FaTwitter size={30} className='text-blue-500' />
+                    </Link>
+                    <Link to='https://www.linkedin.com/'>
+                        <FaLinkedin className='text-blue-500' size={30} />
+                    </Link>
+                    <Link to='https://wwww.github.com/segunajibola'>
+                        <FaGithub size={30} className='text-white' />
+                    </Link>
+                    <Link to='https://wa.me/'>
+                        <FaWhatsapp size={30} className='text-green-500' />
+                    </Link>
+                    <Link to='https://www.instagram.com/iamsegunajibola'>
+                        <FaInstagram size={30} className='text-red-300' />
+                    </Link>
+                </div>
                 <p className='mt-4'>Download Our App</p>
                 <div className=''>
                     <Link to='/'>
                     <img
-                        src='/images/playstore.png'
+                        src={google}
                         alt='Google playstore'
                         className='inline h-8 w-16 md:w-20'
                     />
                     </Link>
                     <Link to='/'>
                     <img
-                        src='/images/appstore.png'
+                        src={apple}
                         alt='Appstore'
                         className='md:w-26 inline h-11 w-24'
                     />
@@ -103,7 +102,7 @@ const Footer = () => {
             </div>
         </div>
     <p className='p-3 text-center'>
-    Copyright &copy; {getYear()}. All right reserved.
+    Copyright &copy; {new Date().getFullYear()}. All right reserved.
     </p>
   </footer>
   )
