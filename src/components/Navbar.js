@@ -65,7 +65,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <ul
+      <ul id="nav"
         className={
           !nav
             ? 'hidden'

@@ -19,12 +19,12 @@ const Contact = () => {
           <div className='sm:text-right mt-20 text-2xl font-bold'>
             <p>What others are saying.</p>
           </div>
-          <div className="bg-gray-700 p-4 pb-4 mt-5">
-            <figure className="bg-gray-800 grid rounded-xl p-4">
+          <div className="bg-gray-500 p-4 pb-4 mt-5 rounded-md">
+            <figure className="bg-gray-800 grid rounded-xl p-4 shadow-lg shadow-black">
            <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
            <div className="pt-6 text-center space-y-3 text-gray-500">
                <blockquote>
-                   <p className="text-lg font-semibold text-gray-700">
+                   <p className="text-lg font-semibold text-gray-300">
                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
                    </p>
                </blockquote>
