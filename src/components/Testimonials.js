@@ -26,8 +26,8 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right mt-16 md:mt-20 text-2xl font-bold'>
+        <div className='max-w-[1000px] w-full grid grid-cols sm:grid-cols-2 md:grid-cols-1 gap-8 px-4'>
+          <div className='sm:text-right mt-16 md:mt-18 md:ml-10 text-2xl font-bold md:text-left'>
             <p>What others are saying.</p>
           </div>
           <Swiper
@@ -42,7 +42,7 @@ const Testimonials = () => {
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="w-[34rem] md:w-[38rem] m-auto"
+            className="w-[34rem] md:w-[38rem] ml-96"
           >
             <SwiperSlide className="md:mt-1 p-2">
               <figure className="bg-gray-800 grid rounded-xl p-5 shadow-lg shadow-gray-700">

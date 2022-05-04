@@ -14,21 +14,21 @@ const Footer = () => {
         <div className='p-4'>
             <div className='mx-auto grid max-w-7xl grid-cols-2 gap-6 space-y-4 md:mx-2 md:grid-cols-4 '>
                 <div>
-                <h5 className='mt-4 text-lg font-semibold dark:text-gray-200'>
-                    Company
-                </h5>
-                <p>
-                    <Link to='/'>About</Link>
-                </p>
-                <p>
-                    <Link to='/'>Awards</Link>
-                </p>
-                <p>
-                    <Link to='/'>Contact us</Link>
-                </p>
-                <p>
-                    <Link to='/'>Bus Terminals</Link>
-                </p>
+                    <h5 className='mt-4 text-lg font-semibold dark:text-gray-200'>
+                        Company
+                    </h5>
+                    <p>
+                        <Link to='/'>About</Link>
+                    </p>
+                    <p>
+                        <Link to='/'>Awards</Link>
+                    </p>
+                    <p>
+                        <Link to='/'>Contact us</Link>
+                    </p>
+                    <p>
+                        <Link to='/'>Bus Terminals</Link>
+                    </p>
                 </div>
                 <div>
                 <h5 className='mb-1 text-lg font-semibold dark:text-gray-200'>
