@@ -44,12 +44,32 @@ const Testi = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="w-[38rem]"
           >
-            <SwiperSlide className="bg-gray-500 p-4 pb-4 -mt-5 md:mt-5 rounded-md">
-              <figure className="bg-gray-800 grid rounded-xl p-4 shadow-lg shadow-black">
+            <SwiperSlide className="md:mt-1 p-2">
+              <figure className="bg-gray-800 grid rounded-xl p-5 shadow-lg shadow-gray-700">
                 <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
                 <div className="pt-6 text-center space-y-3 text-gray-500">
-                  <blockquote>
-                      <p className="text-lg font-semibold text-gray-300">
+                  <blockquote className='mx-auto'>
+                      <p className="text-lg font-semibold text-gray-300 mx-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
+                      </p>
+                  </blockquote>
+                  <figcaption className="font-medium">
+                      <div className="">
+                          John hff
+                      </div>
+                      <div className="">
+                            Staff Engineer, ABL
+                      </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide className="md:mt-1 p-2">
+              <figure className="bg-gray-800 grid rounded-xl p-5 shadow-lg shadow-gray-700">
+                <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
+                <div className="pt-6 text-center space-y-3 text-gray-500">
+                  <blockquote className='mx-auto'>
+                      <p className="text-lg font-semibold text-gray-300 mx-4">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
                       </p>
                   </blockquote>
@@ -63,27 +83,7 @@ const Testi = () => {
                   </figcaption>
                 </div>
               </figure>
-          </SwiperSlide>
-            <SwiperSlide className="bg-gray-500 p-4 pb-4 -mt-5 md:mt-5 rounded-md">
-              <figure className="bg-gray-800 grid rounded-xl p-4 shadow-lg shadow-black">
-                <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
-                <div className="pt-6 text-center space-y-3 text-gray-500">
-                  <blockquote>
-                      <p className="text-lg font-semibold text-gray-300">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
-                      </p>
-                  </blockquote>
-                  <figcaption className="font-medium">
-                      <div className="">
-                          John Doe
-                      </div>
-                      <div className="">
-                            Staff Engineer, ABL
-                      </div>
-                  </figcaption>
-                </div>
-              </figure>
-          </SwiperSlide>
+            </SwiperSlide>  
           </Swiper>
           
           
