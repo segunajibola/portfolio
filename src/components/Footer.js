@@ -9,12 +9,12 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <footer className='w-full text-gray-300 bg-[#0a192f] md:mx-0'>
-        <hr />
+    <footer className='w-full text-gray-300 bg-[#0a192f] md:mx-0 dark:bg-gray-100 dark:text-gray-800'>
+        <hr className='dark:bg-black'/>
         <div className='p-4'>
             <div className='mx-auto grid max-w-7xl grid-cols-2 gap-6 space-y-4 md:mx-2 md:grid-cols-4 '>
                 <div>
-                    <h5 className='mt-4 text-lg font-semibold dark:text-gray-200'>
+                    <h5 className='mt-4 text-lg font-semibold'>
                         Company
                     </h5>
                     <p>
@@ -31,7 +31,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div>
-                <h5 className='mb-1 text-lg font-semibold dark:text-gray-200'>
+                <h5 className='mb-1 text-lg font-semibold'>
                     Exerience
                 </h5>
                 <p>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </p>
                 </div>
                 <div>
-                <h5 className='mb-1 text-lg font-semibold dark:text-gray-200'>
+                <h5 className='mb-1 text-lg font-semibold'>
                     Terms
                 </h5>
                 <p>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </p>
                 </div>
                 <div>
-                <h5 className='mb-1 text-lg font-semibold dark:text-gray-200'>
+                <h5 className='mb-1 text-lg font-semibold'>
                     Connect
                 </h5>
                 <div className='flex gap-3'>
@@ -70,7 +70,7 @@ const Footer = () => {
                         <FaLinkedin className='text-blue-500' size={30} />
                     </Link>
                     <Link to='https://wwww.github.com/segunajibola'>
-                        <FaGithub size={30} className='text-white' />
+                        <FaGithub size={30} className='text-white dark:text-gray-800' />
                     </Link>
                     <Link to='https://wa.me/'>
                         <FaWhatsapp size={30} className='text-green-500' />
