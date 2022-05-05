@@ -26,11 +26,11 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div className='max-w-[1000px] w-full grid grid-cols sm:grid-cols-2 md:grid-cols-1 gap-8 px-4'>
-          <div className='sm:text-right mt-16 md:mt-18 md:ml-10 text-2xl font-bold md:text-left'>
+        <div className='max-w-[1000px] w-full grid grid-cols sm:grid-cols-1 gap-8 px-4'>
+          <div className='mt-16 md:mt-18 md:ml-10 text-2xl font-bold md:text-left'>
             <p>What others are saying.</p>
           </div>
-          <div className='md:ml-96'>          
+          <div className='md:ml-[20rem]'>          
             <Swiper
               spaceBetween={30}
               centeredSlides={true}
@@ -43,7 +43,7 @@ const Testimonials = () => {
               }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="w-[24rem] m-auto md:w-[38rem]"
+              className="w-[24rem] sm:w-[30rem] m-auto md:w-[38rem]"
             >
               <SwiperSlide className="md:mt-1 p-2">
                 <figure className="bg-gray-800 grid rounded-xl p-5 shadow-lg shadow-gray-700">

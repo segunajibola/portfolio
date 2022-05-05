@@ -29,7 +29,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='fixed z-20 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='fixed z-20 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] dark:bg-gray-300 text-gray-300'>
         
         {/* <li className='py-2 text-3xl'> */}
             <Link className="cursor-pointer" to='home' smooth={true} duration={500}>
@@ -72,12 +72,12 @@ const Navbar = () => {
       </ul>
 
       {/* Dark/Light Mode */}
-      <div onClick={handleMode} className='z-30 ml-72 sm:ml-[35rem] md:ml-0 cursor-pointer'>
+      <div onClick={handleMode} className='z-30 ml-72 sm:ml-[30rem] md:ml-0 cursor-pointer dark:text-gray-800'>
         {!mode ? <FaLightbulb size={20} /> : <FaMoon size={20} />}
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-30 cursor-pointer'>
+      <div onClick={handleClick} className='md:hidden z-30 cursor-pointer dark:text-gray-800'>
         {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
       </div>
 
