@@ -12,7 +12,8 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ handleMode, darkMode }) => {
   const [nav, setNav] = useState(false);
@@ -30,14 +31,19 @@ const Navbar = ({ handleMode, darkMode }) => {
       {/* menu */}
       <ul className='hidden md:flex space-x-10 mr-4 text-sm'>
         <li className='cursor-pointer'>
+          <Link to='/' smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='cursor-pointer'>
             <a href='https://ajibolasegun.hashnode.dev'>
                 Blog
             </a>
         </li>
         <li className='cursor-pointer'>
-          <Link to='about' smooth={true} duration={500}>
+          <a href='#about'>
             About
-          </Link>
+          </a>
         </li>
         <li className='cursor-pointer'>
           <Link to='tools' smooth={true} duration={500}>
@@ -79,6 +85,12 @@ const Navbar = ({ handleMode, darkMode }) => {
             : 'absolute top-0 left-0 w-full z-20 h-screen bg-[#0a192f] flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800'
         }
       >
+        <li className='py-2 text-3xl'>
+          {' '}
+           <Link onClick={handleClick} className="cursor-pointer" to='projects' smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
         <li className='py-2 text-3xl'>
           {' '}
            <Link onClick={handleClick} className="cursor-pointer" to='projects' smooth={true} duration={500}>
