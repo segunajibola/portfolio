@@ -10,7 +10,7 @@ import Testi from "./components/Testimonials";
 
 function App() {
   return (
-    <div className="overflow-hidden">
+  <div className="overflow-hidden" id="dark">
       <Navbar />
       <Home />
       <About />

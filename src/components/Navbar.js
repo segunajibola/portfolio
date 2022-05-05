@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import {
+  FaMoon,
+  FaLightbulb,
   FaBars,
   FaTimes,
   FaGithub,
@@ -15,6 +17,16 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [mode, setMode] = useState(false);
+  const handleMode = () => {
+    setMode(!mode)
+    const btn = document.getElementById('dark');
+    if (btn.classList.contains('dark')) {
+      btn.classList = 'overflow-hidden';
+    } else {
+      btn.classList = 'overflow-hidden dark';
+    }
+  }
 
   return (
     <div className='fixed z-20 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -58,6 +70,10 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      <div onClick={handleMode} className='z-30 cursor-pointer'>
+        {!mode ? <FaLightbulb size={20} /> : <FaMoon size={20} />}
+      </div>
 
       {/* Hamburger */}
       <div onClick={handleClick} className='md:hidden z-30 cursor-pointer'>

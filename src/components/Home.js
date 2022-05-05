@@ -11,7 +11,7 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div name='home' className='w-full bg-[#0a192f] z-10'>
+    <div name='home' className='w-full bg-[#0a192f] dark:bg-gray-100 z-10'>
       {/* Container */}
       <div className='relative md:flex flex-row justify-between md:pt-40 pt-24 px-4 max-w-7xl mx-auto'>
             <div className='max-w-[950px] px-8 flex flex-col justify-center'>
