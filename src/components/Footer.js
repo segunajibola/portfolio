@@ -9,8 +9,8 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <footer className='w-full text-gray-300 bg-[#0a192f] md:mx-0 dark:bg-gray-100 dark:text-gray-800'>
-        <div className='border-t-2 border-gray-300 dark:border-black border-solid'></div>
+    <footer className='w-full text-gray-300 bg-[#0a192f] md:mx-0 dark:bg-gray-300 dark:text-gray-800'>
+        <div className='border-t-2 border-gray-300 dark:border-gray-500 border-solid'></div>
         <div className='p-4'>
             <div className='mx-auto grid max-w-7xl grid-cols-2 gap-6 space-y-4 md:mx-2 md:grid-cols-4 '>
                 <div>
