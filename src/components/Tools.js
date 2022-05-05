@@ -20,43 +20,43 @@ const Tools = () => {
 
           <div className='w-full z-10 grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-10'>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={HTML} alt="HTML icon" />
                   <p className='my-4'>HTML</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={CSS} alt="HTML icon" />
                   <p className='my-4'>CSS</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={JavaScript} alt="HTML icon" />
                   <p className='my-4'>JAVASCRIPT</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={Bootstrap} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={Bootstrap} alt="HTML icon" />
                   <p className='my-4'>BOOTSTRAP</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={Tailwind} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={Tailwind} alt="HTML icon" />
                   <p className='my-4'>TAILWINDCSS</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={ReactImg} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={ReactImg} alt="HTML icon" />
                   <p className='my-4'>REACT</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={Git} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={Git} alt="HTML icon" />
                   <p className='my-4'>GIT</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto dark:bg-gray-800' src={GitHub} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto dark:bg-gray-800' src={GitHub} alt="HTML icon" />
                   <p className='my-4'>GITHUB</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={Firebase} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={Firebase} alt="HTML icon" />
                   <p className='my-4'>FIREBASE</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-20 mx-auto' src={Vercel} alt="HTML icon" />
+                  <img className='w-[70px] mx-auto' src={Vercel} alt="HTML icon" />
                   <p className='my-4'>VERCEL</p>
               </div>
               

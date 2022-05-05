@@ -7,7 +7,13 @@ import {
     FaInstagram,
     FaTwitter,
   } from 'react-icons/fa';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import About from "./About";
+import Tools from "./Tools";
+import Projects from "./Projects";
+import Testimonials from "./Testimonials";
+import Contact from "./Contact";
+
 
 const Home = () => {
   return (
@@ -51,7 +57,13 @@ const Home = () => {
             <div className='flex flex-shrink-0 justify-center sp:pb-0 md:pb-0 items-center'>
                 <img src={profileImg} alt='Profile Image' className="rounded-full w-80 h-80 m-4" />
             </div>
-       </div> 
+       </div>
+       
+        <About />
+        <Tools />
+        <Projects />
+        <Testimonials />
+        <Contact />
     </div>
   );
 };

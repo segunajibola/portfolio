@@ -21,13 +21,13 @@ const Testimonials = () => {
         <div className='max-w-[1000px] w-full'>
           <div className='absolute pb-8 pl-4'> 
           {/* absolute -mt-16 pb-8 pl-4 --- relative pt-20 pl-4*/}
-            <p className='text-[4.5rem] sm:text-[7rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600'>
+            <p className='text-[4.5rem] sm:text-[7rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600 dark:opacity-60'>
               Testimonials
             </p>
           </div>
         </div>
         <div className='max-w-[1000px] w-full grid grid-cols sm:grid-cols-1 gap-8 px-4'>
-          <div className='mt-16 md:mt-18 md:ml-10 text-2xl font-bold md:text-left'>
+          <div className='mt-16 md:mt-20 md:ml-10 text-2xl font-bold md:text-left'>
             <p>What others are saying.</p>
           </div>
           <div className='md:ml-[20rem]'>          
@@ -46,7 +46,7 @@ const Testimonials = () => {
               className="w-[24rem] sm:w-[30rem] m-auto md:w-[38rem]"
             >
               <SwiperSlide className="md:mt-1 p-2">
-                <figure className="bg-gray-800 dark:bg-gray-400 grid rounded-xl p-5 shadow-lg shadow-gray-700">
+                <figure className="bg-gray-700 dark:bg-gray-400 grid rounded-xl p-5 shadow-lg shadow-gray-700">
                   <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
                   <div className="pt-6 text-center space-y-3">
                     <blockquote className='mx-auto'>
@@ -66,7 +66,7 @@ const Testimonials = () => {
                 </figure>
               </SwiperSlide>
               <SwiperSlide className="md:mt-1 p-2">
-                <figure className="bg-gray-800 dark:bg-gray-400 grid rounded-xl p-5 shadow-lg shadow-gray-700">
+                <figure className="bg-gray-700 dark:bg-gray-400 grid rounded-xl p-5 shadow-lg shadow-gray-700">
                   <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
                   <div className="pt-6 text-center space-y-3">
                     <blockquote className='mx-auto'>

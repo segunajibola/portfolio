@@ -14,22 +14,12 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({ handleMode, darkMode }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const [mode, setMode] = useState(false);
-  const handleMode = () => {
-    setMode(!mode)
-    const btn = document.getElementById('dark');
-    if (btn.classList.contains('dark')) {
-      btn.classList = 'overflow-hidden';
-    } else {
-      btn.classList = 'overflow-hidden dark';
-    }
-  }
 
   return (
-    <div className='fixed z-20 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] dark:bg-gray-300 text-gray-300'>
+    <div className='fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800'>
         
         {/* <li className='py-2 text-3xl'> */}
             <Link className="cursor-pointer" to='home' smooth={true} duration={500}>
@@ -73,7 +63,7 @@ const Navbar = () => {
 
       {/* Dark/Light Mode */}
       <div onClick={handleMode} className='z-30 ml-72 sm:ml-[30rem] md:ml-0 cursor-pointer dark:text-gray-800'>
-        {!mode ? <FaLightbulb size={20} /> : <FaMoon size={20} />}
+        {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
       </div>
 
       {/* Hamburger */}

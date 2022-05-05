@@ -8,7 +8,7 @@ const Contact = () => {
         <div className='max-w-[1000px] w-full'>
           <div className='absolute pb-8 pl-4'> 
           {/* absolute -mt-16 pb-8 pl-4 --- relative pt-20 pl-4*/}
-            <p className='text-[6.5rem] md:text-9xl font-bold inline opacity-10 border-b-4 border-yellow-600'>
+            <p className='text-[6.5rem] md:text-9xl font-bold inline opacity-10 border-b-4 border-yellow-600 dark:opacity-60'>
               Contact
             </p>
           </div>
