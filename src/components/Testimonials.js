@@ -21,7 +21,7 @@ const Testimonials = () => {
         <div className='max-w-[1000px] w-full'>
           <div className='absolute pb-8 pl-4'> 
           {/* absolute -mt-16 pb-8 pl-4 --- relative pt-20 pl-4*/}
-            <p className='text-[5.8rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600'>
+            <p className='text-[4.5rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600'>
               Testimonials
             </p>
           </div>
@@ -43,7 +43,7 @@ const Testimonials = () => {
               }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="w-[30rem] md:w-[38rem] grid-cols-end"
+              className="w-[24rem] m-auto md:w-[38rem]"
             >
               <SwiperSlide className="md:mt-1 p-2">
                 <figure className="bg-gray-800 grid rounded-xl p-5 shadow-lg shadow-gray-700">
