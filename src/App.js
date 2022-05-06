@@ -18,23 +18,22 @@ function App() {
   }
 
   return (
-  <div className={`overflow-hidden scroll-smooth ${darkMode ? "dark" : ""}`} id="dark">
+  <div className={`overflow-hidden ${darkMode ? "dark" : ""}`} id="dark">
       <Router>
-        <Navbar handleMode={handleMode} darkMode={darkMode} />
-        <Routes >
-          <Route
-            path='/'
-            element={<Home />}
-          />
-          <Route
-            path='/allprojects'
-            element={<AllProjects />}
-          />
-        </Routes>
-        
-        <Footer />
+          <Navbar handleMode={handleMode} darkMode={darkMode} />
+            <Routes >
+              <Route
+                path='/'
+                element={<Home />}
+              />
+              <Route
+                path='/allprojects'
+                element={<AllProjects />}
+              />
+            </Routes>
+          <Footer />
       </Router>
     </div>
-  );
+  )
 };
 export default App;

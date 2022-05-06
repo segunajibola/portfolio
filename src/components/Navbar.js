@@ -14,6 +14,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
 // import { Link } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = ({ handleMode, darkMode }) => {
   const [nav, setNav] = useState(false);
@@ -31,29 +32,29 @@ const Navbar = ({ handleMode, darkMode }) => {
       {/* menu */}
       <ul className='hidden md:flex space-x-10 mr-4 text-sm'>
         <li className='cursor-pointer'>
-          <Link to='/' smooth={true} duration={500}>
+          <HashLink to='/#top'>
             Home
-          </Link>
+          </HashLink>
         </li>
         <li className='cursor-pointer'>
-            <a href='https://ajibolasegun.hashnode.dev'>
-                Blog
-            </a>
-        </li>
-        <li className='cursor-pointer'>
-          <a href='#about'>
-            About
+          <a href='https://ajibolasegun.hashnode.dev'>
+              Blog
           </a>
         </li>
         <li className='cursor-pointer'>
-          <Link to='tools' smooth={true} duration={500}>
-            Tools
-          </Link>
+          <HashLink to='/#about'>
+            About
+          </HashLink>
         </li>
         <li className='cursor-pointer'>
-          <Link to='projects' smooth={true} duration={500}>
+          <HashLink to='/#tools'>
+            Tools
+          </HashLink>
+        </li>
+        <li className='cursor-pointer'>
+          <HashLink to='/#projects'>
             Projects
-          </Link>
+          </HashLink>
         </li>
         <li className='cursor-pointer'>
           <Link to='projects' smooth={true} duration={500}>
@@ -61,9 +62,9 @@ const Navbar = ({ handleMode, darkMode }) => {
           </Link>
         </li>
         <li className='cursor-pointer'>
-          <Link to='contact' smooth={true} duration={500}>
+          <HashLink to='/#contact'>
             Contact
-          </Link>
+          </HashLink>
         </li>
       </ul>
 

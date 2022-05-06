@@ -17,9 +17,9 @@ import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div name='home' className='w-full bg-[#0a192f] dark:bg-gray-100 z-10'>
+    <div id='home' className='w-full bg-[#0a192f] dark:bg-gray-100 z-10'>
       {/* Container */}
-      <div className='relative md:flex flex-row justify-between md:pt-40  pt-24 px-1 max-w-8xl mx-auto'>
+      <div className='relative md:flex flex-row justify-between md:pt-40  pt-24 px-1 md:px-16 max-w-8xl mx-auto'>
             <div className='max-w-[950px] px-4 flex flex-col justify-center '>
                 <p className='text-yellow-600 text-2xl dark:text-gray-800'>Hi, my name is</p>
                 <h1 className='md:text-4xl text-5xl mb-4 font-bold text-[#ccd6f6] dark:text-gray-800'>

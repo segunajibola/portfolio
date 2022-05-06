@@ -11,7 +11,7 @@ import Vercel from '../assets/vercel.png';
 
 const Tools = () => {
   return (
-    <div name='tools' className='w-full pt-32 md:pt-0 md:h-screen bg-[#0a192f] dark:bg-gray-100 text-gray-300 dark:text-gray-800'>
+    <div id='tools' className='w-full pt-32 md:pt-0 md:h-screen bg-[#0a192f] dark:bg-gray-100 text-gray-300 dark:text-gray-800'>
       {/* Container */}
       <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
           <div className='absolute md:mb-32 md:pb-48 mb-96 sm:pb-2 -mt-10 pb-96 pl-4'>
