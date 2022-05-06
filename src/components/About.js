@@ -4,7 +4,7 @@ const About = () => {
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='max-w-[1000px] w-full'>
           <div className='absolute -mt-16 pb-8 pl-4'>
-            <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600 dark:text-gray-900 dark:opacity-60'>
+            <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600 dark:text-gray-900'>
               About
             </p>
           </div>
