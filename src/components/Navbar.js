@@ -12,7 +12,6 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
-// import { Link } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
@@ -24,15 +23,15 @@ const Navbar = ({ handleMode, darkMode }) => {
     <div className='fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800'>
         
         {/* <li className='py-2 text-3xl'> */}
-            <Link className="cursor-pointer" to='home' smooth={true} duration={500}>
-            <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
+            <Link className="cursor-pointer" to='/' onClick={() => window.scrollTo(0, 0)}>
+              <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
             </Link>
         {/* </li> */}
 
       {/* menu */}
       <ul className='hidden md:flex space-x-10 mr-4 text-sm'>
         <li className='cursor-pointer'>
-          <HashLink to='/#top'>
+          <HashLink to='/' onClick={() => window.scrollTo(0, 0)}>
             Home
           </HashLink>
         </li>
@@ -57,7 +56,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           </HashLink>
         </li>
         <li className='cursor-pointer'>
-          <Link to='projects' smooth={true} duration={500}>
+          <Link to='projects'>
             Resume
           </Link>
         </li>
@@ -88,55 +87,55 @@ const Navbar = ({ handleMode, darkMode }) => {
       >
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
             Home
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
             Blog
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='tools' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='tools'>
             Tools
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='home' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='home'>
             Home
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='about' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='about'>
             About
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='contact' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='contact'>
             Contact
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
             Projects
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='testimonials' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='testimonials'>
             Testimonials
           </Link>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects' smooth={true} duration={500}>
+           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
             Download Resume
           </Link>
         </li>

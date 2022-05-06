@@ -1,6 +1,4 @@
 import shegzy from '../assets/logo.png';
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -15,12 +13,8 @@ const Testimonials = () => {
   return (
     <div id='testimonials' className='w-full text-gray-300 overflow-hidden bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800'>
       <div className='flex flex-col justify-center items-center w-full h-full pt-20'>
-        {/* <div className='relative pt-20 pl-4'>
-            <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600'>Contact</p>
-        </div> */}
         <div className='max-w-[1000px] w-full'>
           <div className='absolute pb-8 pl-4'> 
-          {/* absolute -mt-16 pb-8 pl-4 --- relative pt-20 pl-4*/}
             <p className='text-[4.5rem] sm:text-[7rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600 dark:opacity-60'>
               Testimonials
             </p>

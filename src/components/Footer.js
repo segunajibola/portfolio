@@ -5,7 +5,8 @@ import {
     FaInstagram,
     FaTwitter,
   } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+  import { Link } from 'react-router-dom';
+  import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   return (

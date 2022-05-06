@@ -1,11 +1,6 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Tools from "./components/Tools";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonials";
 import AllProjects from "./components/AllProjects";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';

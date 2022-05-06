@@ -1,5 +1,4 @@
 import profileImg from '../assets/newPr.png';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import {
     FaWhatsapp,
     FaGithub,
@@ -7,12 +6,12 @@ import {
     FaInstagram,
     FaTwitter,
   } from 'react-icons/fa';
-import { Link } from 'react-scroll';
 import About from "./About";
 import Tools from "./Tools";
-import Projects from "./Projects";
 import Testimonials from "./Testimonials";
+import HighlightProjects from "./HighlightProjects";
 import Contact from "./Contact";
+import { HashLink } from 'react-router-hash-link';
 
 
 const Home = () => {
@@ -32,8 +31,8 @@ const Home = () => {
                 I'm focused on building responsive web apps with cool people for small & online businesses.
                 </p>
                 <div className='flex w-full'>
-                    <button className='text-white text-xs border-2 border-gray-600 px-2 py-2 my-2 flex items-center hover:bg-yellow-600 hover:border-white dark:text-gray-800'>
-                        <Link className="cursor-pointer" to='projects' smooth={true} duration={500}>View Projects</Link>
+                    <button className='text-white text-xs border-2 border-gray-600 px-2 py-2 my-2 flex items-center hover:bg-gray-700 hover:border-gray-300 dark:text-gray-800 dark:hover:text-gray-100 dark:hover:bg-gray-500 dark:hover:border-gray-900'>
+                        <HashLink to='/#projects' className="cursor-pointer">View Projects</HashLink>
                     </button>
                     <div class="lg:hidden inline-flex text-2xl space-x-3 ml-8 mt-4">
                             <a href="https://www.twitter.com/iamsegunajibola">
@@ -59,11 +58,11 @@ const Home = () => {
             </div>
        </div>
        
-        <About />
-        <Tools />
-        <Projects />
-        <Testimonials />
-        <Contact />
+       <About />
+       <Tools />
+       <HighlightProjects />
+       <Testimonials />
+       <Contact />
     </div>
   );
 };
