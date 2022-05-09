@@ -63,21 +63,21 @@ const Footer = () => {
                 <h5 className='mb-1 text-lg font-semibold'>
                     Connect
                 </h5>
-                <div className='flex gap-3'>
+                <div className='flex gap-1'>
                     <Link to='https://www.twitter.com/iamsegunajibola'>
-                        <FaTwitter size={30} className='text-blue-500' />
+                        <FaTwitter size={25} className='text-blue-500' />
                     </Link>
                     <Link to='https://www.linkedin.com/'>
-                        <FaLinkedin className='text-blue-500' size={30} />
+                        <FaLinkedin className='text-blue-500' size={25} />
                     </Link>
                     <Link to='https://wwww.github.com/segunajibola'>
-                        <FaGithub size={30} className='text-white dark:text-gray-800' />
+                        <FaGithub size={25} className='text-white dark:text-gray-800' />
                     </Link>
                     <Link to='https://wa.me/'>
-                        <FaWhatsapp size={30} className='text-green-500' />
+                        <FaWhatsapp size={25} className='text-green-500' />
                     </Link>
                     <Link to='https://www.instagram.com/iamsegunajibola'>
-                        <FaInstagram size={30} className='text-red-300' />
+                        <FaInstagram size={25} className='text-red-300' />
                     </Link>
                 </div>
                 </div>
