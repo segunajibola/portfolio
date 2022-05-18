@@ -36,7 +36,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           </HashLink>
         </li>
         <li className='cursor-pointer'>
-          <a href="https://blog.segunajibola.dev">
+          <a href="https://blog.segunajibola.com">
               Blog
           </a>
         </li>
