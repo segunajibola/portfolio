@@ -163,7 +163,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           <li className='w-[100px] h-[40px] flex justify-between items-center ml-[-60px] hover:ml-[-0px] hover:px-1 duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='mailto:ajbl.segun@gmail.com'
             >
               Email <HiOutlineMail size={30} />
             </a>
