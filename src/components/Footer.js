@@ -6,7 +6,6 @@ import {
     FaTwitter,
   } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -20,19 +19,27 @@ const Footer = () => {
                        Quick Links
                     </h5>
                     <p>
-                        <Link to='/'>About</Link>
+                        <HashLink className="cursor-pointer" to='/#about'>
+                            About
+                        </HashLink>
                     </p>
                     <p>
-                        <Link to='/'>Tools</Link>
+                        <HashLink className="cursor-pointer" to='/#tools'>
+                            Tools
+                        </HashLink>
                     </p>
                     <p>
-                        <Link to='/'>Projects</Link>
+                        <HashLink className="cursor-pointer" to='/#projects'>
+                            Projects
+                        </HashLink>
                     </p>
                     <p>
-                        <Link to='/'>Testimonials</Link>
+                        <HashLink className="cursor-pointer" to='/#testimonials'>
+                            Testimonials
+                        </HashLink>
                     </p>
                     <p>
-                        <Link to='/'>Download Resume</Link>
+                        <a href='https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing'>Download Resume</a>
                     </p>
                 </div>
 
