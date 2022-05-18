@@ -40,7 +40,7 @@ const Footer = () => {
                 <h5 className='mb-1 text-lg font-semibold'>
                     Connect
                 </h5>
-                    <a href="https://www.ajibolasegun.hashnode.dev">
+                    <a href="https://blog.segunajibola.com">
                         Blog
                     </a>
                     <a href="" className='mt-[1px] block'>

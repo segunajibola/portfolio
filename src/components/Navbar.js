@@ -36,7 +36,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           </HashLink>
         </li>
         <li className='cursor-pointer'>
-          <a href='https://ajibolasegun.hashnode.dev'>
+          <a href="https://blog.segunajibola.dev">
               Blog
           </a>
         </li>
@@ -93,9 +93,9 @@ const Navbar = ({ handleMode, darkMode }) => {
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
+           <a onClick={handleClick} className="cursor-pointer" href="https://blog.segunajibola.com">
             Blog
-          </Link>
+          </a>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
