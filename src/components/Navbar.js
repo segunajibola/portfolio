@@ -22,11 +22,9 @@ const Navbar = ({ handleMode, darkMode }) => {
   return (
     <div className='fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800'>
         
-        {/* <li className='py-2 text-3xl'> */}
-            <Link className="cursor-pointer" to='/' onClick={() => window.scrollTo(0, 0)}>
-              <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
-            </Link>
-        {/* </li> */}
+      <Link className="cursor-pointer" to='/' onClick={() => window.scrollTo(0, 0)}>
+        <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
+      </Link>
 
       {/* menu */}
       <ul className='hidden md:flex space-x-10 mr-4 text-sm'>
@@ -56,9 +54,9 @@ const Navbar = ({ handleMode, darkMode }) => {
           </HashLink>
         </li>
         <li className='cursor-pointer'>
-          <Link to='projects'>
+          <a href='https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing'>
             Resume
-          </Link>
+          </a>
         </li>
         <li className='cursor-pointer'>
           <HashLink to='/#contact'>
@@ -86,58 +84,45 @@ const Navbar = ({ handleMode, darkMode }) => {
         }
       >
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
-            Home
-          </Link>
-        </li>
-        <li className='py-2 text-3xl'>
-          {' '}
            <a onClick={handleClick} className="cursor-pointer" href="https://blog.segunajibola.com">
             Blog
           </a>
         </li>
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='tools'>
+           <HashLink onClick={handleClick} className="cursor-pointer" to='/#tools'>
             Tools
-          </Link>
+          </HashLink>
         </li>
         <li className='py-2 text-3xl'>
           {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='home'>
+           <HashLink onClick={handleClick} className="cursor-pointer" to='/'>
             Home
-          </Link>
+          </HashLink>
         </li>
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='about'>
+           <HashLink onClick={handleClick} className="cursor-pointer" to='/#about'>
             About
-          </Link>
+          </HashLink>
         </li>
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='contact'>
+           <HashLink onClick={handleClick} className="cursor-pointer" to='/#contact'>
             Contact
-          </Link>
+          </HashLink>
         </li>
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
+           <HashLink onClick={handleClick} className="cursor-pointer" to='/#projects'>
             Projects
-          </Link>
+          </HashLink>
         </li>
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='testimonials'>
+           <HashLink onClick={handleClick} className="cursor-pointer" to='/#testimonials'>
             Testimonials
-          </Link>
+          </HashLink>
         </li>
         <li className='py-2 text-3xl'>
-          {' '}
-           <Link onClick={handleClick} className="cursor-pointer" to='projects'>
+           <a onClick={handleClick} className="cursor-pointer" href='https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing'>
             Download Resume
-          </Link>
+          </a>
         </li>
       </ul>
 
@@ -171,7 +156,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           <li className='w-[100px] h-[40px] flex justify-between items-center ml-[-55px] hover:ml-[-0px] hover:px-1 duration-300 bg-[#565f69]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
