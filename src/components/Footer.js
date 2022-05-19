@@ -60,7 +60,7 @@ const Footer = () => {
                         <a href='https://www.linkedin.com/in/segunajibola/'>
                             <FaLinkedin className='text-blue-500' size={25} />
                         </a>
-                        <a href='https://wwww.github.com/segunajibola'>
+                        <a href='https://www.github.com/segunajibola'>
                             <FaGithub size={25} className='text-white dark:text-gray-800' />
                         </a>
                         <a href='https://wa.me/'>
