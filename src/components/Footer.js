@@ -50,8 +50,8 @@ const Footer = () => {
                     <a href="https://blog.segunajibola.com">
                         Blog
                     </a>
-                    <a href="" className='mt-[1px] block'>
-                        Schedule a Meet
+                    <a href="https://calendly.com/segunajibola/30min" className='mt-[1px] block'>
+                        Schedule a Meeting
                     </a>
                     <div className='flex gap-1 mt-1'>
                         <a href='https://www.twitter.com/iamsegunajibola'>
