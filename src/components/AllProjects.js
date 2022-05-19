@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import data from "../data/projects.js";
+import { Link } from 'react-router-dom';
 
 const AllProjects = () => {
     return (
@@ -15,6 +16,10 @@ const AllProjects = () => {
               <ProjectCard project={project}/>
             )}
             </div>
+              <Link to="/" className="flex justify-center">
+              <button className='text-gray-100 border-2 hover:text-gray-800 hover:bg-gray-100 hover:border-gray-200 px-4 py-2 md:my-2 dark:text-gray-900 dark:border-gray-500 dark:hover:bg-gray-300 dark:hover:border-gray-800' onClick={() => window.scrollTo(0, 0)}>
+              Home</button>
+            </Link>
           </div>
         </div>
       );

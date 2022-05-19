@@ -17,13 +17,13 @@ const About = () => {
             <p>I love building cool software that improves
             the lives & business of others.</p>
             
-            <p>I create responsive websites from scratch for creatives ranging from portfolio websites to functional websites for small businesses so that they can focus on what makes them money.</p>
+            <p className='mt-3'>I create responsive websites from scratch for creatives ranging from portfolio websites to functional websites for small businesses so that they can focus on what makes them money.</p>
             
-            <p>I'm intrested in design, writing, teaching, tech, and how small technical things works.</p>
+            <p className='mt-3'>I'm intrested in design, writing, teaching, tech, and how small technical things works.</p>
 
             <p className='mt-3'>In my free time, I read about Arsenal, tech news and latest gadgets.</p>
             
-            <p>PS: I use <a href='https://www.twitter.com/iamsegunajibola' className='text-blue-400'>Twitter</a> alot.</p>  
+            <p className='mt-3'>PS: I use <a href='https://www.twitter.com/iamsegunajibola' className='text-blue-400'>Twitter</a> alot.</p>  
           </div>
         </div>
       </div>

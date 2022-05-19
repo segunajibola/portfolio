@@ -1,8 +1,4 @@
 import React from "react";
-import {
-  FaGithub,
-  FaGlobe
-} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import data from "../data/projects.js";
 import ProjectCard from "./ProjectCard";
