@@ -59,38 +59,38 @@ const Footer = () => {
                     <a href="https://calendly.com/segunajibola/30min" className='mt-[1px] block'>
                         Schedule a Meeting
                     </a>
-                    <div className='flex gap-1 mt-2'>
+                    <div className='flex gap-1.5 mt-2'>
                         <a href='https://www.twitter.com/iamsegunajibola'>
-                            <FaTwitter size={25} className='text-blue-500' />
+                            <FaTwitter size={24} className='text-blue-500' />
                         </a>
                         <a href='https://www.linkedin.com/in/segunajibola/'>
-                            <FaLinkedin className='text-blue-500' size={25} />
+                            <FaLinkedin size={24} className='text-blue-500' />
                         </a>
                         <a href='https://www.github.com/segunajibola'>
-                            <FaGithub size={25} className='text-white dark:text-gray-800' />
+                            <FaGithub size={24} className='text-white dark:text-gray-800' />
                         </a>
                         <a href='https://wa.me/'>
-                            <FaWhatsapp size={25} className='text-green-500' />
+                            <FaWhatsapp size={24} className='text-green-500' />
                         </a>
                         <a href='https://www.facebook.com/ajibola.segunemmanuel'>
-                            <FaFacebook size={23} className='text-blue-300' />
+                            <FaFacebook size={22} className='text-blue-300' />
                         </a>
                     </div>
-                    <div className='flex gap-1 mt-2'>
+                    <div className='flex gap-1.5 mt-2'>
                         <a href='https://www.instagram.com/iamsegunajibola'>
-                            <FaInstagram size={25} className='text-red-300' />
+                            <FaInstagram size={24} className='text-red-300' />
                         </a>
                         <a href='mailto:ajbl.segun@gmail.com'>
-                            <HiOutlineMail size={30} className='-mt-[2px] text-gray-300' />
+                            <HiOutlineMail size={29} className='-mt-[2px] text-gray-300' />
                         </a>
                         <a href='https://codepen.io/iamsegunajibola'>
-                            <FaCodepen size={26} className='mt-[1px] text-gray-600' />
+                            <FaCodepen size={25} className='mt-[1px] text-gray-600' />
                         </a>
                         <a href='https://stackoverflow.com/users/15411958/segunajibola'>
-                            <FaStackOverflow size={27} className='text-yellow-300' />
+                            <FaStackOverflow size={26} className='text-yellow-300' />
                         </a>
                         <a href='https://dev.to/iamsegunajibola'>
-                            <FaDev size={26} className='mt-[2px] text-gray-500' />
+                            <FaDev size={25} className='mt-[2px] text-gray-500' />
                         </a>
                     </div>
                 </div>
