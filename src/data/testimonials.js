@@ -1,4 +1,4 @@
-const data = [
+const testimonials = [
     {
       id: 1,
       image: "/images/shegzy.jpg",
@@ -25,5 +25,5 @@ const data = [
     },
   ]
   
-  export default data;
+  export default testimonials;
   

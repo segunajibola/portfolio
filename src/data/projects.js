@@ -4,7 +4,7 @@ const data = [
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
-    title: "Fashion design website",
+    description: "A portfolio of fashion design from Videva",
     stack: "HTML, Tailwindcss & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
@@ -12,29 +12,29 @@ const data = [
   {
     id: 2,
     image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    title: "Fashion design website",
-    stack: "HTML, Tailwindcss & Vanilla JavaScript",
-    link: "https://videvafashionline.vercel.app", 
-    github: "https://github.com/segunajibola/VidevaFashionLine"
+    alt: "Buscation App",
+    name: "Buscation",
+    description: "Tourism project - explore popular centers in Nigeria, book a seat, travel, have fun.",
+    stack: "HTML, Tailwindcss & React",
+    link: "https://buscation-app.vercel.app", 
+    github: "https://github.com/segunajibola/buscation-app"
   },
   {
     id: 3,
     image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    title: "Fashion design website",
-    stack: "HTML, Tailwindcss & Vanilla JavaScript",
-    link: "https://videvafashionline.vercel.app", 
-    github: "https://github.com/segunajibola/VidevaFashionLine"
+    alt: "Tailwindplates",
+    name: "Tailwindplates",
+    description: "Download free & premium Tailwind website templates in minutes. Free for personal use and commercials.",
+    stack: "HTML, Tailwindcss & React",
+    link: "https://tailwindplates.vercel.app", 
+    github: "https://github.com/segunajibola/tailwindplates"
   },
   {
     id: 4,
     image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    title: "Fashion design website",
+    alt: "Image Gallery",
+    name: "Image-Gallery",
+    description: "Image Gallery",
     stack: "HTML, Tailwindcss & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
@@ -44,7 +44,7 @@ const data = [
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
-    title: "Fashion design website",
+    description: "Fashion design website",
     stack: "HTML, Tailwindcss & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
@@ -54,7 +54,7 @@ const data = [
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
-    title: "Fashion design website",
+    description: "Fashion design website",
     stack: "HTML, Tailwindcss & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"

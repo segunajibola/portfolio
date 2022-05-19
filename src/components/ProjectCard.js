@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
             <div className="p-3">
                 <h3 className="font-bold text-2xl">{project.name}</h3>
                 <p className="pt-2">
-                    {project.title}
+                    {project.description}
                 </p>
                 <p className="mt-2"><span className="font-semibold">Project stack: </span>{project.stack}</p>
                 <a href={project.link} className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black">View Live <FaGlobe size={14} className='inline mb-1 text-black' /></a>
