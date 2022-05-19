@@ -95,7 +95,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className='text-lg  font-medium tracing-wider mt-2.5 mb-2'>Built with <span class="text-red-700 text-2xl">🧡</span> by Segun Ajibola.</p>
+            <p className='text-lg font-medium tracing-wider mt-4 mb-2'>Built with <span class="text-red-700 text-2xl">🧡</span> by Segun Ajibola.</p>
             <Link to="/" className="flex justify-center">
                 <button className='text-gray-100 border-2 hover:text-gray-800 hover:bg-gray-100 hover:border-gray-200 px-4 py-2 md:my-2 dark:text-gray-900 dark:border-gray-500 dark:hover:bg-gray-300 dark:hover:border-gray-800' onClick={() => window.scrollTo(0, 0)}>
                 Back to Top <FaArrowUp className='inline'/></button>
