@@ -22,7 +22,7 @@ const Home = () => {
             <div className='max-w-[950px] px-4 flex flex-col justify-center '>
                 <p className='text-yellow-600 text-2xl dark:text-gray-800'>Hi 👋, my name is</p>
                 <h1 className='md:text-4xl text-5xl mb-4 font-bold text-[#ccd6f6] dark:text-gray-800'>
-                Segun Ajibola
+                Segun Ajibola.
                 </h1>
                 <h2 className='text-2xl sm:text-3xl font-bold text-[#8892b0] dark:text-gray-800'>
                 I'm a front-end developer, technical writer & open source contributor.

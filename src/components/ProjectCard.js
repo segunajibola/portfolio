@@ -6,7 +6,7 @@ import {
 
 const ProjectCard = ({ project }) => {
   return (
-          <div className="bg-yellow-600 rounded-3xl shadow-lg" key={project.id}>
+          <div className="bg-yellow-700 rounded-3xl shadow-lg" key={project.id}>
             <a href={project.link}><img src={project.image} alt={project.alt} className="rounded-t-2xl object-cover object-top w-full h-40"/></a>
             <div className="p-3">
                 <h3 className="font-bold text-2xl">{project.name}</h3>

@@ -1,4 +1,5 @@
 import shegzy from '../assets/logo.png';
+import testimonials from '../data/testimonials';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -39,51 +40,31 @@ const Testimonials = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className="w-[24.5rem] sm:w-[30rem] m-auto md:w-[38rem]"
             >
-              <SwiperSlide className="md:mt-1 p-2">
-                <figure className="bg-gray-700 dark:bg-gray-300 grid rounded-xl p-3 shadow-lg shadow-gray-700">
-                  <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
-                  <div className="pt-4 text-center space-y-3">
-                    <blockquote className='mx-auto'>
-                        <p className="text-lg font-semibold text-gray-300 mx-4 dark:text-gray-900">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
-                        </p>
-                    </blockquote>
-                    <figcaption className="font-medium text-gray-500 dark:text-gray-800">
-                        <div className="">
-                            John hff
-                        </div>
-                        <div className="mb-2">
-                              Staff Engineer, ABL
-                        </div>
-                    </figcaption>
-                  </div>
-                </figure>
-              </SwiperSlide>
-              <SwiperSlide className="md:mt-1 p-2">
-                <figure className="bg-gray-700 dark:bg-gray-300 grid rounded-xl p-3 shadow-lg shadow-gray-700">
-                  <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
-                  <div className="pt-4 text-center space-y-3">
-                    <blockquote className='mx-auto'>
-                        <p className="text-lg font-semibold text-gray-300 dark:text-gray-900 mx-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci maxime eligendi tempora tempore, consequuntur nihil, libero tenetur sed nesciunt, unde accusantium! Ea sint saepe quaerat quia est eius fugit.
-                        </p>
-                    </blockquote>
-                    <figcaption className="font-medium text-gray-500 dark:text-gray-800">
-                        <div className="">
-                            John Doe
-                        </div>
-                        <div className="mb-2">
-                              Staff Engineer, ABL
-                        </div>
-                    </figcaption>
-                  </div>
-                </figure>
-              </SwiperSlide>  
+              {testimonials.map((testimonial) => (
+                <SwiperSlide className="md:mt-1 p-2">
+                  <figure className="bg-gray-700 dark:bg-gray-300 grid rounded-xl p-3 shadow-lg shadow-gray-700">
+                    <img className="w-32 h-32 rounded-full mx-auto" src={shegzy} alt="" />
+                    <div className="pt-4 text-center space-y-3">
+                      
+                      <blockquote className='mx-auto'>
+                          <p className="text-lg font-semibold text-gray-300 mx-4 dark:text-gray-900">
+                          {testimonial.text}
+                          </p>
+                      </blockquote>
+                      <figcaption className="font-medium text-gray-500 dark:text-gray-800">
+                          <div className="">
+                          {testimonial.name}
+                          </div>
+                          <div className="mb-2">
+                          {testimonial.position}
+                          </div>
+                      </figcaption>
+                    </div>
+                  </figure>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
-
-          
-          
         </div>
       </div>
     </div>

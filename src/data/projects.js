@@ -4,8 +4,8 @@ const data = [
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
-    description: "A portfolio of fashion design from Videva",
-    stack: "HTML, Tailwindcss & Vanilla JavaScript",
+    description: "A portfolio website to showcse the beauties of fashion design from Videva Fashion Line.",
+    stack: "HTML, TailwindCSS & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
   },
@@ -15,7 +15,7 @@ const data = [
     alt: "Buscation App",
     name: "Buscation",
     description: "Tourism project - explore popular centers in Nigeria, book a seat, travel, have fun.",
-    stack: "HTML, Tailwindcss & React",
+    stack: "HTML, TailwindCSS & React",
     link: "https://buscation-app.vercel.app", 
     github: "https://github.com/segunajibola/buscation-app"
   },
@@ -25,7 +25,7 @@ const data = [
     alt: "Tailwindplates",
     name: "Tailwindplates",
     description: "Download free & premium Tailwind website templates in minutes. Free for personal use and commercials.",
-    stack: "HTML, Tailwindcss & React",
+    stack: "HTML, TailwindCSS & React",
     link: "https://tailwindplates.vercel.app", 
     github: "https://github.com/segunajibola/tailwindplates"
   },
@@ -33,31 +33,31 @@ const data = [
     id: 4,
     image: "/images/vfl.png",
     alt: "Image Gallery",
-    name: "Image-Gallery",
-    description: "Image Gallery",
-    stack: "HTML, Tailwindcss & Vanilla JavaScript",
+    name: "Image Gallery",
+    description: "Search and download free images from Unsplash - built with Unsplash's API",
+    stack: "HTML, TailwindCSS & React",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
   },
   {
     id: 5,
     image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    description: "Fashion design website",
-    stack: "HTML, Tailwindcss & Vanilla JavaScript",
-    link: "https://videvafashionline.vercel.app", 
-    github: "https://github.com/segunajibola/VidevaFashionLine"
+    alt: "Danny Thompson's Twitter Portfolio",
+    name: "Danny Thompson's Twitter",
+    description: "A simple web page to how valuable Danny Thompson has been to the Twitter tech community",
+    stack: "HTML, CSS & Widget.js",
+    link: "https://dannythompson-twitterportfolio.vercel.app", 
+    github: "https://github.com/segunajibola/twitter-portfolio"
   },
   {
     id: 6,
     image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    description: "Fashion design website",
-    stack: "HTML, Tailwindcss & Vanilla JavaScript",
-    link: "https://videvafashionline.vercel.app", 
-    github: "https://github.com/segunajibola/VidevaFashionLine"
+    alt: "Savelinks",
+    name: "Savelinks",
+    description: "Save links in seconds. A light-weight Chrome extension to paste and save important links quickly.",
+    stack: "HTML, CSS & JavaScript",
+    link: "https://savelinks.vercel.app", 
+    github: "https://github.com/segunajibola/savelinks"
   },
 ]
 
