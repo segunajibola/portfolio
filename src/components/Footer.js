@@ -57,7 +57,7 @@ const Footer = () => {
                         <a href='https://www.twitter.com/iamsegunajibola'>
                             <FaTwitter size={25} className='text-blue-500' />
                         </a>
-                        <a href='https://www.Linkedin.com/'>
+                        <a href='https://www.linkedin.com/in/segunajibola/'>
                             <FaLinkedin className='text-blue-500' size={25} />
                         </a>
                         <a href='https://wwww.github.com/segunajibola'>
