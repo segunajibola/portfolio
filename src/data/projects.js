@@ -59,6 +59,26 @@ const data = [
     link: "https://savelinks.vercel.app", 
     github: "https://github.com/segunajibola/savelinks"
   },
+  {
+    id: 7,
+    image: "/images/interior-decoration.png",
+    alt: "Inner Lux",
+    name: "Inner Lux",
+    description: "Designing the beautiful decoration in your homes.",
+    stack: "HTML, CSS, JavaScript, Fullpage.js",
+    link: "https://segunajibola.github.io/Interior-Decoration/index.html", 
+    github: "https://github.com/segunajibola/Interior-Decoration"
+  },
+  {
+    id: 8,
+    image: "/images/foodit.png",
+    alt: "Foodit",
+    name: "Foodit",
+    description: "Latest recipies from Foodit's kitchen.",
+    stack: "HTML, TailwindCSS & JavaScript",
+    link: "https://segunajibola.github.io/Foodit/public/index.html", 
+    github: "https://github.com/segunajibola/Foodit"
+  },
 ]
 
 export default data;
