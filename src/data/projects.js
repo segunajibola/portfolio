@@ -11,7 +11,7 @@ const data = [
   },
   {
     id: 2,
-    image: "/images/vfl.png",
+    image: "/images/buscation.png",
     alt: "Buscation App",
     name: "Buscation",
     description: "Tourism project - explore popular centers in Nigeria, book a seat, travel, have fun.",
@@ -31,7 +31,7 @@ const data = [
   },
   {
     id: 4,
-    image: "/images/vfl.png",
+    image: "/images/imageGallery.png",
     alt: "Image Gallery",
     name: "Image Gallery",
     description: "Search and download free images from Unsplash - built with Unsplash's API",
@@ -41,7 +41,7 @@ const data = [
   },
   {
     id: 5,
-    image: "/images/vfl.png",
+    image: "/images/dannyThompson.png",
     alt: "Danny Thompson's Twitter Portfolio",
     name: "Danny Thompson's Twitter",
     description: "A simple web page to how valuable Danny Thompson has been to the Twitter tech community",
@@ -70,11 +70,11 @@ const data = [
     github: "https://github.com/segunajibola/Interior-Decoration"
   },
   {
-    id: 8,
+    id: 7,
     image: "/images/foodit.png",
     alt: "Foodit",
     name: "Foodit",
-    description: "Latest recipies from Foodit's kitchen.",
+    description: "Browse and order the latest recipies from Foodit's kitchen.",
     stack: "HTML, TailwindCSS & JavaScript",
     link: "https://segunajibola.github.io/Foodit/public/index.html", 
     github: "https://github.com/segunajibola/Foodit"
