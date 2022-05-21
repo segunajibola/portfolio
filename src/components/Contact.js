@@ -44,7 +44,7 @@ const Contact = () => {
               <input 
                 type="hidden"
                 name="_next"
-                value="https://www.segunajibola.com/#contact"
+                value="https://www.segunajibola.com/thankyou"
               />
               <input
                 type="hidden"

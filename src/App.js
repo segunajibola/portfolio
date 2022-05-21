@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import AllProjects from "./components/AllProjects";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import ThankYou from "./components/ThankYou";
+import NotFound from "./components/NotFound";
 
 function App() {
 
@@ -24,6 +26,14 @@ function App() {
               <Route
                 path='/allprojects'
                 element={<AllProjects />}
+              />
+              <Route
+                path='/thankyou'
+                element={<ThankYou />}
+              />
+              <Route
+                path='*'
+                element={<NotFound />}
               />
             </Routes>
           <Footer />
