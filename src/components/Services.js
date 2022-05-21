@@ -16,7 +16,6 @@ const Services = () => {
             <button className='text-gray-100 border-2 hover:text-gray-800 hover:bg-gray-100 hover:border-gray-200 px-4 py-3 my-8 dark:text-gray-900 dark:border-gray-500 dark:hover:bg-gray-300 dark:hover:border-gray-800' onClick={() => window.scrollTo(0, 0)}>
             See all projects</button>
           </Link>
-        
       </div>
     </div>
   )
