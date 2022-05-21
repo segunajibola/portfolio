@@ -76,7 +76,7 @@ const Footer = () => {
                             <FaFacebook size={22} className='text-blue-300' />
                         </a>
                     </div>
-                    <div className='flex gap-1.5 mt-2'>
+                    <div className='flex gap-1 mt-2'>
                         <a href='https://www.instagram.com/iamsegunajibola'>
                             <FaInstagram size={24} className='text-red-300 dark:text-red-900' />
                         </a>
