@@ -33,13 +33,14 @@ const Contact = () => {
                 name="subject"
                 placeholder="Subject"
                 className="bg-gray-400 dark:bg-gray-300 mb-4 p-2 text-gray-800 rounded-lg outline-none placeholder:text-gray-200"
-                required
               />
               <textarea
                 className='bg-gray-400 dark:bg-gray-300 text-gray-800 rounded-lg p-2 outline-none placeholder:text-gray-200'
                 name="message"
                 rows="10"
-                placeholder='Message'>
+                placeholder='Message'
+                required
+              >
               </textarea>
               <input 
                 type="hidden"
