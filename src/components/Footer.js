@@ -78,16 +78,16 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-1.5 mt-2'>
                         <a href='https://www.instagram.com/iamsegunajibola'>
-                            <FaInstagram size={24} className='text-red-300' />
+                            <FaInstagram size={24} className='text-red-300 dark:text-red-900' />
                         </a>
                         <a href='mailto:ajbl.segun@gmail.com'>
-                            <HiOutlineMail size={29} className='-mt-[2px] text-gray-300' />
+                            <HiOutlineMail size={29} className='-mt-[2px] text-gray-300 dark:text-gray-600' />
                         </a>
                         <a href='https://codepen.io/iamsegunajibola'>
                             <FaCodepen size={25} className='mt-[1px] text-gray-600' />
                         </a>
                         <a href='https://stackoverflow.com/users/15411958/segunajibola'>
-                            <FaStackOverflow size={26} className='text-yellow-300' />
+                            <FaStackOverflow size={26} className='text-yellow-300 dark:text-yellow-800' />
                         </a>
                         <a href='https://dev.to/iamsegunajibola'>
                             <FaDev size={25} className='mt-[2px] text-gray-500' />
