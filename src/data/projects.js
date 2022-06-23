@@ -21,7 +21,7 @@ const data = [
   },
   {
     id: 3,
-    image: "/images/vfl.png",
+    image: "/images/tailwindplates.png",
     alt: "Tailwindplates",
     name: "Tailwindplates",
     description: "Download free & premium Tailwind website templates in minutes. Free for personal use and commercials.",
@@ -51,13 +51,13 @@ const data = [
   },
   {
     id: 6,
-    image: "/images/vfl.png",
-    alt: "Savelinks",
-    name: "Savelinks",
-    description: "Save links in seconds. A light-weight Chrome extension to paste and save important links quickly.",
+    image: "/images/SFA.png",
+    alt: "SFA",
+    name: "SFA",
+    description: "Seguns's Food Arcade is a simple restaurant website showing the different Nigerian dishes and their prices.",
     stack: "HTML, CSS & JavaScript",
-    link: "https://savelinks.vercel.app", 
-    github: "https://github.com/segunajibola/savelinks"
+    link: "https://segunajibola.github.io/segunsfoodarcade/index.html", 
+    github: "https://github.com/segunajibola/segunsfoodarcade"
   },
   {
     id: 7,
@@ -78,6 +78,26 @@ const data = [
     stack: "HTML, TailwindCSS & JavaScript",
     link: "https://segunajibola.github.io/Foodit/public/index.html", 
     github: "https://github.com/segunajibola/Foodit"
+  },
+  {
+    id: 8,
+    image: "/images/boredombot.png",
+    alt: "BoredomBot",
+    name: "BoredomBot",
+    description: "Tap on button to get suggestions of what to do in your boredom.",
+    stack: "HTML, CSS & JavaScript",
+    link: "https://boredombot.vercel.app", 
+    github: "https://github.com/segunajibola/boredombot"
+  },
+  {
+    id: 9,
+    image: "/images/savelinks.png",
+    alt: "Savelinks",
+    name: "Savelinks",
+    description: "Save links in seconds. A light-weight Chrome extension to paste and save important links quickly.",
+    stack: "HTML, CSS & JavaScript",
+    link: "https://savelinks.vercel.app", 
+    github: "https://github.com/segunajibola/savelinks"
   },
 ]
 

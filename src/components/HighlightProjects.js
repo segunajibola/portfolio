@@ -13,7 +13,7 @@ const HighlightProjects = () => {
           </p>
         </div>
         <div className='grid grid-cols-1 pt-20 md:-mt-5 md:pt-32 md:grid-cols-2 lg:grid-cols-3 gap-6 z-10'>
-          {data.filter((item, index) => index < 3).map((project) => (
+          {data.filter((item, index) => index < 6).map((project) => (
            <ProjectCard project={project} />
           ))}
         </div>
