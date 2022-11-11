@@ -23,7 +23,7 @@ const Navbar = ({ handleMode, darkMode }) => {
     <div className='fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800'>
         
       <Link className="cursor-pointer" to='/' onClick={() => window.scrollTo(0, 0)}>
-        <img src={Logo} alt='Logo Image' style={{ width: '40px', height: "40px", borderRadius: "50px" }} />
+        <img src={Logo} alt='Logo Image' style={{ width: "40px", height: "40px", borderRadius: "50px" }} />
       </Link>
 
       {/* menu */}
