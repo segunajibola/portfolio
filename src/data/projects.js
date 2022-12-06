@@ -5,9 +5,9 @@ const data = [
     alt: "Picbot",
     name: "Picbot",
     description: "A websiteto showcse the beauties of fashion design from Videva Fashion Line.",
-    stack: "HTML, TailwindCSS & Vanilla JavaScript",
-    link: "https://videvafashionline.vercel.app", 
-    github: "https://github.com/segunajibola/VidevaFashionLine"
+    stack: "HTML, TailwindCSS & React",
+    link: "https://picbot.vercel.app", 
+    github: "https://github.com/segunajibola/picbot"
   },
   {
     id: 2,
