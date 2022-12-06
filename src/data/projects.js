@@ -1,10 +1,10 @@
 const data = [
   {
     id: 1,
-    image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    description: "A portfolio website to showcse the beauties of fashion design from Videva Fashion Line.",
+    image: "/images/picbot.png",
+    alt: "Picbot",
+    name: "Picbot",
+    description: "A website to showcse the beauties of fashion design from Videva Fashion Line.",
     stack: "HTML, TailwindCSS & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
@@ -98,6 +98,16 @@ const data = [
     stack: "HTML, CSS & JavaScript",
     link: "https://savelinks.vercel.app", 
     github: "https://github.com/segunajibola/savelinks"
+  },
+  {
+    id: 10,
+    image: "/images/vfl.png",
+    alt: "Videva Fashion Line",
+    name: "Videva Fashion Line",
+    description: "A portfolio website to showcse the beauties of fashion design from Videva Fashion Line.",
+    stack: "HTML, TailwindCSS & Vanilla JavaScript",
+    link: "https://videvafashionline.vercel.app", 
+    github: "https://github.com/segunajibola/VidevaFashionLine"
   },
 ]
 
