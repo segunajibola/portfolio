@@ -4,7 +4,7 @@ const data = [
     image: "/images/picbot.png",
     alt: "Picbot",
     name: "Picbot",
-    description: "A websiteto showcse the beauties of fashion design from Videva Fashion Line.",
+    description: "A web app to search images on the internet.",
     stack: "HTML, TailwindCSS & React",
     link: "https://picbot.vercel.app", 
     github: "https://github.com/segunajibola/picbot"
