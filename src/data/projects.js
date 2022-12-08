@@ -4,8 +4,8 @@ const data = [
     image: "/images/picbot.png",
     alt: "Picbot",
     name: "Picbot",
-    description: "A web app to search images on the internet.",
-    stack: "HTML, TailwindCSS & React",
+    description: "Search and download images from Unsplash.",
+    stack: "HTML, TailwindCSS, React, Unsplash API",
     link: "https://picbot.vercel.app", 
     github: "https://github.com/segunajibola/picbot"
   },
@@ -31,11 +31,11 @@ const data = [
   },
   {
     id: 4,
-    image: "/images/imageGallery.png",
-    alt: "Image Gallery",
-    name: "Image Gallery",
-    description: "Search and download free images from Unsplash - built with Unsplash's API",
-    stack: "HTML, TailwindCSS & React",
+    image: "/images/vfl.png",
+    alt: "Videva Fashion Line",
+    name: "Videva Fashion Line",
+    description: "A portfolio website to showcase the beauties of fashion design from Videva Fashion Line.",
+    stack: "HTML, TailwindCSS & Vanilla JavaScript",
     link: "https://videvafashionline.vercel.app", 
     github: "https://github.com/segunajibola/VidevaFashionLine"
   },
@@ -98,16 +98,6 @@ const data = [
     stack: "HTML, CSS & JavaScript",
     link: "https://savelinks.vercel.app", 
     github: "https://github.com/segunajibola/savelinks"
-  },
-  {
-    id: 10,
-    image: "/images/vfl.png",
-    alt: "Videva Fashion Line",
-    name: "Videva Fashion Line",
-    description: "A portfolio website to showcse the beauties of fashion design from Videva Fashion Line.",
-    stack: "HTML, TailwindCSS & Vanilla JavaScript",
-    link: "https://videvafashionline.vercel.app", 
-    github: "https://github.com/segunajibola/VidevaFashionLine"
   },
 ]
 
