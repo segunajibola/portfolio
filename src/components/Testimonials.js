@@ -28,7 +28,6 @@ const Testimonials = () => {
           <div className="mt-16 md:mt-20 md:ml-10 text-2xl font-bold md:text-left">
             <p>What others are saying.</p>
           </div>
-          <div className="md:ml-[20rem]">
             <Swiper
               spaceBetween={30}
               centeredSlides={true}
@@ -66,7 +65,6 @@ const Testimonials = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
         </div>
       </div>
     </div>
