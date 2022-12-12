@@ -10,7 +10,7 @@ import NotFound from "./components/NotFound";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const handleMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode(!darkMode)
   };
 
   return (
