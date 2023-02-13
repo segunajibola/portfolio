@@ -75,17 +75,13 @@ const Navbar = ({ handleMode, darkMode }) => {
         onClick={handleClick}
         className="md:hidden z-30 cursor-pointer dark:text-gray-800"
       >
-        {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
+        {!nav ? <FaBars size={20} /> : <FaTimes className="-mr-[20px]" size={20} />}
       </div>
 
       {/* Mobile menu */}
       <div className={`md:hidden ${nav ? "" : "hidden"}`}>
         <ul
-          className={
-            !nav
-              ? "hidden"
-              : "absolute top-0 left-0 w-full z-20 h-screen bg-[#0a192f] flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800"
-          }
+          className="absolute top-0 left-0 w-full z-20 h-screen bg-[#0a192f] flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800"
         >
           <li className="py-2 text-3xl">
             <a
