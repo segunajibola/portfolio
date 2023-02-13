@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -27,7 +26,7 @@ const Navbar = ({ handleMode, darkMode }) => {
         onClick={() => window.scrollTo(0, 0)}
       >
         <img
-          src={Logo}
+          src="https://avatars.githubusercontent.com/u/74687658?v=4"
           alt="Logo Image"
           style={{ width: "40px", height: "40px", borderRadius: "50px" }}
         />
