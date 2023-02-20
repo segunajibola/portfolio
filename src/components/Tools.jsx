@@ -2,7 +2,7 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
 import ReactImg from '../assets/react.png';
-import Firebase from '../assets/firebase.png';
+import Nextjs from '../assets/next.png';
 import Git from '../assets/git.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
@@ -52,8 +52,8 @@ const Tools = () => {
                   <p className='my-4'>GITHUB</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={Firebase} alt="HTML icon" />
-                  <p className='my-4'>FIREBASE</p>
+                  <img className='w-[70px] h-[60px] mx-auto' src={Nextjs} alt="HTML icon" />
+                  <p className='my-4'>NEXT.JS</p>
               </div>
               <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
                   <img className='w-[60px] mx-auto' src={Vercel} alt="HTML icon" />
