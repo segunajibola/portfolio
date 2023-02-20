@@ -61,12 +61,12 @@ const data = [
   {
     id: 6,
     image: "/images/foodit.png",
-    alt: "Foodit",
-    name: "Foodit",
-    description: "Browse and order the latest recipies from Foodit's kitchen.",
+    alt: "Foodarena",
+    name: "Foodarena",
+    description: "Browse and order the latest recipies from foodarena's kitchen.",
     stack: "HTML, TailwindCSS & JavaScript",
-    link: "https://segunajibola.github.io/Foodit/public/index.html",
-    github: "https://github.com/segunajibola/Foodit",
+    link: "https://foodarena.vercel.app",
+    github: "https://github.com/segunajibola/foodarena",
     status: "completed",
   },
   {
