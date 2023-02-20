@@ -60,7 +60,7 @@ const data = [
   },
   {
     id: 6,
-    image: "/images/foodit.png",
+    image: "/images/foodarena.png",
     alt: "Foodarena",
     name: "Foodarena",
     description: "Browse and order the latest recipies from foodarena's kitchen.",
