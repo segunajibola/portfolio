@@ -1,17 +1,29 @@
 const data = [
   {
     id: 1,
+    image: "/images/etherchannel.png",
+    alt: "Etherchanel solution service",
+    name: "Etherchanel solution service",
+    description:
+      "Computer based services and corporate trainings online/offline.",
+    stack: "Nextjs, TailwindCSS, Framer Motion",
+    link: "https://ether-channels-business.vercel.app",
+    github: "",
+    status: "ongoing",
+  },
+  {
+    id: 2,
     image: "/images/picbot.png",
     alt: "Picbot",
     name: "Picbot",
-    description: "Search and download images from Unsplash.",
+    description: "A website to search and download images from Unsplash with just one click.",
     stack: "HTML, TailwindCSS, React, Unsplash API",
     link: "https://picbot.vercel.app",
     github: "https://github.com/segunajibola/picbot",
     status: "completed",
   },
   {
-    id: 2,
+    id: 3,
     image: "/images/tourcation.png",
     alt: "Tourcation App",
     name: "Tourcation",
@@ -23,7 +35,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/dannyThompson.png",
     alt: "Danny Thompson's Twitter Portfolio",
     name: "Danny Thompson's Twitter",
@@ -35,7 +47,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 4,
+    id: 5,
     image: "/images/savelinks.png",
     alt: "Savelinks",
     name: "Savelinks",
@@ -47,30 +59,31 @@ const data = [
     status: "completed",
   },
   {
-    id: 5,
+    id: 6,
     image: "/images/boredombot.png",
     alt: "BoredomBot",
     name: "BoredomBot",
     description:
-      "Tap on button to get suggestions of what to do in your boredom.",
+      "Tap on a button to get suggestions of what to do when you are alone and bored.",
     stack: "HTML, CSS & JavaScript",
     link: "https://boredombot.vercel.app",
     github: "https://github.com/segunajibola/boredombot",
     status: "completed",
   },
   {
-    id: 6,
+    id: 7,
     image: "/images/foodarena.png",
     alt: "Foodarena",
     name: "Foodarena",
-    description: "Browse and order the latest recipies from foodarena's kitchen.",
+    description:
+      "Browse and order the latest recipies from foodarena's kitchen.",
     stack: "HTML, TailwindCSS & JavaScript",
     link: "https://foodarena.vercel.app",
     github: "https://github.com/segunajibola/foodarena",
     status: "completed",
   },
   {
-    id: 7,
+    id: 8,
     image: "/images/tailwindplates.png",
     alt: "Tailwindplates",
     name: "Tailwindplates",
@@ -82,7 +95,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 8,
+    id: 9,
     image: "/images/SFA.png",
     alt: "SFA",
     name: "SFA",
@@ -94,7 +107,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 9,
+    id: 10,
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
@@ -106,7 +119,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 10,
+    id: 11,
     image: "/images/interior-decoration.png",
     alt: "Inner Lux",
     name: "Inner Lux",
