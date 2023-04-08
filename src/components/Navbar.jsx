@@ -13,6 +13,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import styles from "../../styles/"
 
 const Navbar = ({ handleMode, darkMode }) => {
   const [sideNav, setSideNav] = useState(false);
@@ -32,36 +33,36 @@ const Navbar = ({ handleMode, darkMode }) => {
         />
       </Link>
 
-      <div className="flex gap-2">
-        {/* menu */}
-        <ul className="hidden md:flex space-x-10 mr-4 text-sm">
-          <li className="cursor-pointer">
-            <HashLink to="/" onClick={() => window.scrollTo(0, 0)}>
-              Home
-            </HashLink>
-          </li>
-          <li className="cursor-pointer">
-            <a href="https://blog.segunajibola.com">Blog</a>
-          </li>
-          <li className="cursor-pointer">
-            <HashLink to="/#about">About</HashLink>
-          </li>
-          <li className="cursor-pointer">
-            <HashLink to="/#tools">Tools</HashLink>
-          </li>
-          <li className="cursor-pointer">
-            <HashLink to="/#projects">Projects</HashLink>
-          </li>
-          <li className="cursor-pointer">
-            <a href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing">
-              Resume
-            </a>
-          </li>
-          <li className="cursor-pointer">
-            <HashLink to="/#contact">Contact</HashLink>
-          </li>
-        </ul>
+      {/* menu */}
+      <ul className="hidden md:flex space-x-10 mr-4 text-sm">
+        <li className="cursor-pointer">
+          <HashLink to="/" onClick={() => window.scrollTo(0, 0)}>
+            Home
+          </HashLink>
+        </li>
+        <li className="cursor-pointer">
+          <a href="https://blog.segunajibola.com">Blog</a>
+        </li>
+        <li className="cursor-pointer">
+          <HashLink to="/#about">About</HashLink>
+        </li>
+        <li className="cursor-pointer">
+          <HashLink to="/#tools">Tools</HashLink>
+        </li>
+        <li className="cursor-pointer">
+          <HashLink to="/#projects">Projects</HashLink>
+        </li>
+        <li className="cursor-pointer">
+          <a href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing">
+            Resume
+          </a>
+        </li>
+        <li className="cursor-pointer">
+          <HashLink to="/#contact">Contact</HashLink>
+        </li>
+      </ul>
 
+      <div className="flex gap-2">
         {/* Dark/Light Mode */}
         <div
           onClick={handleMode}
@@ -69,18 +70,17 @@ const Navbar = ({ handleMode, darkMode }) => {
         >
           {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
         </div>
-      </div>
-
-      {/* Hamburger */}
-      <div
-        onClick={handleClick}
-        className="md:hidden z-30 cursor-pointer dark:text-gray-800"
-      >
-        {!sideNav ? (
-          <FaBars size={22} className="translate-x-0" />
-        ) : (
-          <FaTimes size={22} className="" />
-        )}
+        {/* Hamburger */}
+        <div
+          onClick={handleClick}
+          className="md:hidden z-30 cursor-pointer dark:text-gray-800"
+        >
+          {!sideNav ? (
+            <FaBars size={22} className="translate-x-0" />
+          ) : (
+            <FaTimes size={22} className="" />
+          )}
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -91,7 +91,7 @@ const Navbar = ({ handleMode, darkMode }) => {
         } 
         `}
       >
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:-rotate-[10deg]">
           <a
             onClick={handleClick}
             className="cursor-pointer"
@@ -100,7 +100,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Blog
           </a>
         </li>
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -109,12 +109,12 @@ const Navbar = ({ handleMode, darkMode }) => {
             Tools
           </HashLink>
         </li>
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:-rotate-[10deg]">
           <HashLink onClick={handleClick} className="cursor-pointer" to="/">
             Home
           </HashLink>
         </li>
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -123,7 +123,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             About
           </HashLink>
         </li>
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:-rotate-[10deg]">
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -132,7 +132,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Contact
           </HashLink>
         </li>
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -141,7 +141,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Projects
           </HashLink>
         </li>
-        <li className="py-2 text-3xl">
+        <li className={`${}`}>
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -150,7 +150,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Testimonials
           </HashLink>
         </li>
-        <li className="py-2 text-3xl">
+        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
           <a
             onClick={handleClick}
             className="cursor-pointer"
