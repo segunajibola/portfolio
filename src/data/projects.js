@@ -52,14 +52,26 @@ const data = [
     alt: "Trenp",
     name: "Trenp",
     description:
-      "A web project to display the list of trnding people in the entertainment industry and their biography.",
+      "A web project to display the list of trending people in the entertainment industry and their biography.",
     stack: "Nextjs, TailwindCSS & Movie DB",
     link: "https://trenp.vercel.app",
     github: "https://github.com/segunajibola/trenp",
     status: "completed",
   },
   {
-    id: 6,
+    id: 7,
+    image: "/images/windowwidth.png",
+    alt: "Window-width",
+    name: "Windowwidth",
+    description:
+      "A simple web app to show your current window width dynamically",
+    stack: "React, TailwindCSS, Vitejs",
+    link: "https://windowwidth.vercel.app",
+    github: "https://github.com/segunajibola/window-width",
+    status: "completed",
+  },
+  {
+    id: 8,
     image: "/images/dannyThompson.png",
     alt: "Danny Thompson's Twitter Portfolio",
     name: "Danny Thompson's Twitter",
@@ -71,7 +83,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 7,
+    id: 9,
     image: "/images/savelinks.png",
     alt: "Savelinks",
     name: "Savelinks",
@@ -79,11 +91,11 @@ const data = [
       "Save links in seconds. A light-weight Chrome extension to paste and save important links quickly.",
     stack: "HTML, CSS & JavaScript",
     link: "https://savelinks.vercel.app",
-    github: "https://github.com/segunajibola/savelinks",
+    github: "https://github.com/segunajibola/savelinks-chrome-extension",
     status: "completed",
   },
   {
-    id: 8,
+    id: 10,
     image: "/images/boredombot.png",
     alt: "BoredomBot",
     name: "BoredomBot",
@@ -95,7 +107,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 9,
+    id: 11,
     image: "/images/foodarena.png",
     alt: "Foodarena",
     name: "Foodarena",
@@ -107,7 +119,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 10,
+    id: 12,
     image: "/images/tailwindplates.png",
     alt: "Tailwindplates",
     name: "Tailwindplates",
@@ -119,7 +131,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 11,
+    id: 13,
     image: "/images/SFA.png",
     alt: "SFA",
     name: "SFA",
@@ -131,7 +143,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 12,
+    id: 14,
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
@@ -143,7 +155,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 13,
+    id: 15,
     image: "/images/interior-decoration.png",
     alt: "Inner Lux",
     name: "Inner Lux",
