@@ -20,7 +20,8 @@ const ProjectCard = ({ project }) => {
             <span className="font-semibold">Status: </span>
             {project.status}
           </p>
-          <a
+          <div className="flex justify-between">
+            <a
             href={project.link}
             className="inline-block mt-4 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black"
           >
@@ -28,11 +29,13 @@ const ProjectCard = ({ project }) => {
           </a>
           <a
             href={project.github}
-            className={`inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black ${project.github ? "" : "cursor-not-allowed"}`}
+            className={`inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black ${project.github ? "" : "cursor-not-allowed bg-gray-100"}`}
           >
             View On Github
             <FaGithub size={15} className="inline ml-1 mb-1 text-black" />
           </a>
+          </div>
+          
         </div>
       </div>
   );
