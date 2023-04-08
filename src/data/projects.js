@@ -91,7 +91,7 @@ const data = [
       "Save links in seconds. A light-weight Chrome extension to paste and save important links quickly.",
     stack: "HTML, CSS & JavaScript",
     link: "https://savelinks.vercel.app",
-    github: "https://github.com/segunajibola/savelinks",
+    github: "https://github.com/segunajibola/savelinks-chrome-extension",
     status: "completed",
   },
   {
