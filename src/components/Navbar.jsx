@@ -32,7 +32,7 @@ const Navbar = ({ handleMode, darkMode }) => {
         />
       </Link>
 
-      <div className="flex gap-2 border-4 border-red-500">
+      <div className="flex gap-2">
         {/* menu */}
         <ul className="hidden md:flex space-x-10 mr-4 text-sm">
           <li className="cursor-pointer">
@@ -62,6 +62,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           </li>
         </ul>
 
+        {/* Dark/Light Mode */}
         <div
           onClick={handleMode}
           className="z-30 cursor-pointer dark:text-gray-800"
@@ -70,32 +71,17 @@ const Navbar = ({ handleMode, darkMode }) => {
         </div>
       </div>
 
+      {/* Hamburger */}
       <div
         onClick={handleClick}
         className="md:hidden z-30 cursor-pointer dark:text-gray-800"
       >
         {!sideNav ? (
-          <FaBars size={22} />
+          <FaBars size={22} className="translate-x-0" />
         ) : (
-          <FaTimes size={22} className="text-white" />
+          <FaTimes size={22} className="" />
         )}
       </div>
-
-      {/* Dark/Light Mode original */}
-      {/* <div
-        onClick={handleMode}
-        className="z-30 ml-72 sm:ml-[30rem] md:ml-0 cursor-pointer dark:text-gray-800"
-      >
-        {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
-      </div> */}
-
-      {/* Hamburger original */}
-      {/* <div
-        onClick={handleClick}
-        className="md:hidden z-30 cursor-pointer dark:text-gray-800"
-      >
-        {!sideNav ? <FaBars size={20} /> : <FaTimes className="ml-[200px]" size={20} />}
-      </div> */}
 
       {/* Mobile menu */}
 
