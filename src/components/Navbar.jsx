@@ -13,10 +13,11 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import styles from "../../styles/"
 
 const Navbar = ({ handleMode, darkMode }) => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [sideNav, setSideNav] = useState(false);
+  const handleClick = () => setSideNav(!sideNav);
 
   return (
     <div className="fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800">
@@ -61,98 +62,104 @@ const Navbar = ({ handleMode, darkMode }) => {
         </li>
       </ul>
 
-      {/* Dark/Light Mode */}
-      <div
-        onClick={handleMode}
-        className="z-30 ml-72 sm:ml-[30rem] md:ml-0 cursor-pointer dark:text-gray-800"
-      >
-        {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
-      </div>
-
-      {/* Hamburger */}
-      <div
-        onClick={handleClick}
-        className="md:hidden z-30 cursor-pointer dark:text-gray-800"
-      >
-        {!nav ? <FaBars size={20} /> : <FaTimes className="-mr-[20px]" size={20} />}
+      <div className="flex gap-2">
+        {/* Dark/Light Mode */}
+        <div
+          onClick={handleMode}
+          className="z-30 cursor-pointer dark:text-gray-800"
+        >
+          {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
+        </div>
+        {/* Hamburger */}
+        <div
+          onClick={handleClick}
+          className="md:hidden z-30 cursor-pointer dark:text-gray-800"
+        >
+          {!sideNav ? (
+            <FaBars size={22} className="translate-x-0" />
+          ) : (
+            <FaTimes size={22} className="" />
+          )}
+        </div>
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden ${nav ? "" : "hidden"}`}>
-        <ul
-          className="absolute top-0 left-0 w-full z-20 h-screen bg-[#0a192f] flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800"
-        >
-          <li className="py-2 text-3xl">
-            <a
-              onClick={handleClick}
-              className="cursor-pointer"
-              href="https://blog.segunajibola.com"
-            >
-              Blog
-            </a>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#tools"
-            >
-              Tools
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            {" "}
-            <HashLink onClick={handleClick} className="cursor-pointer" to="/">
-              Home
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#about"
-            >
-              About
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#contact"
-            >
-              Contact
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#projects"
-            >
-              Projects
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#testimonials"
-            >
-              Testimonials
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <a
-              onClick={handleClick}
-              className="cursor-pointer"
-              href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing"
-            >
-              Download Resume
-            </a>
-          </li>
-        </ul>
-      </div>
+
+      <ul
+        className={`md:hidden flex flex-col justify-center items-center rounded-tl-full top-0 right-0 w-full z-20 fixed h-full bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800 transition duration-500 ease-in-out border-4 ${
+          sideNav ? "translate-x-0" : "translate-x-full rotate-180"
+        } 
+        `}
+      >
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
+          <a
+            onClick={handleClick}
+            className="cursor-pointer"
+            href="https://blog.segunajibola.com"
+          >
+            Blog
+          </a>
+        </li>
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#tools"
+          >
+            Tools
+          </HashLink>
+        </li>
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
+          <HashLink onClick={handleClick} className="cursor-pointer" to="/">
+            Home
+          </HashLink>
+        </li>
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#about"
+          >
+            About
+          </HashLink>
+        </li>
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#contact"
+          >
+            Contact
+          </HashLink>
+        </li>
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#projects"
+          >
+            Projects
+          </HashLink>
+        </li>
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#testimonials"
+          >
+            Testimonials
+          </HashLink>
+        </li>
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
+          <a
+            onClick={handleClick}
+            className="cursor-pointer"
+            href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing"
+          >
+            Download Resume
+          </a>
+        </li>
+      </ul>
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
