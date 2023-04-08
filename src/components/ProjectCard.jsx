@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
             className={`inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black ${project.github ? "" : "cursor-not-allowed"}`}
           >
             View On Github
-            <FaGithub size={15} className="inline mb-1 text-black" />
+            <FaGithub size={15} className="inline ml-1 mb-1 text-black" />
           </a>
         </div>
       </div>

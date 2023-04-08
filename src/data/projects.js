@@ -50,10 +50,10 @@ const data = [
     id: 5,
     image: "/images/trenp.png",
     alt: "Trenp",
-    name: "Tourcation",
+    name: "Trenp",
     description:
-      "Tourism project - explore popular centers in Nigeria, book a seat, travel, have fun.",
-    stack: "Nextjs & TailwindCSS",
+      "A web project to display the list of trnding people in the entertainment industry and their biography.",
+    stack: "Nextjs, TailwindCSS & Movie DB",
     link: "https://trenp.vercel.app",
     github: "https://github.com/segunajibola/trenp",
     status: "completed",
