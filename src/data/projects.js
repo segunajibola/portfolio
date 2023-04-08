@@ -52,7 +52,7 @@ const data = [
     alt: "Trenp",
     name: "Trenp",
     description:
-      "A web project to display the list of trnding people in the entertainment industry.",
+      "A web project to display the list of trnding people in the entertainment industry and their biography.",
     stack: "Nextjs, TailwindCSS & Movie DB",
     link: "https://trenp.vercel.app",
     github: "https://github.com/segunajibola/trenp",
