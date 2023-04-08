@@ -11,7 +11,7 @@ const AllProjects = () => {
                 Projects
               </p>
             </div>
-            <div className='grid grid-cols-1 mb-5 pt-20 md:-mt-5 md:pt-32 md:grid-cols-2 lg:grid-cols-3 gap-6 z-10'>
+            <div className='grid grid-cols-1 mb-5 pt-20 md:-mt-5 md:pt-32 md:grid-cols-2 lg:grid-cols-3 gap-6 z-10 px-6'>
             {data.map((project) => 
               <ProjectCard project={project}/>
             )}
