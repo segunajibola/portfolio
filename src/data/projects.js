@@ -36,6 +36,30 @@ const data = [
   },
   {
     id: 4,
+    image: "/images/t-pro.png",
+    alt: "T-Pro",
+    name: "T-Pro Signature",
+    description:
+      "Beauty, makeup and event decoration website.",
+    stack: "Nextjs, TailwindCSS, Framer Motion",
+    link: "https://tprosignature.vercel.app",
+    github: "https://github.com/segunajibola/t-pro",
+    status: "ongoing",
+  },
+  {
+    id: 5,
+    image: "/images/trenp.png",
+    alt: "Trenp",
+    name: "Tourcation",
+    description:
+      "Tourism project - explore popular centers in Nigeria, book a seat, travel, have fun.",
+    stack: "Nextjs & TailwindCSS",
+    link: "https://trenp.vercel.app",
+    github: "https://github.com/segunajibola/trenp",
+    status: "completed",
+  },
+  {
+    id: 6,
     image: "/images/dannyThompson.png",
     alt: "Danny Thompson's Twitter Portfolio",
     name: "Danny Thompson's Twitter",
@@ -47,7 +71,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 5,
+    id: 7,
     image: "/images/savelinks.png",
     alt: "Savelinks",
     name: "Savelinks",
@@ -59,7 +83,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 6,
+    id: 8,
     image: "/images/boredombot.png",
     alt: "BoredomBot",
     name: "BoredomBot",
@@ -71,7 +95,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 7,
+    id: 9,
     image: "/images/foodarena.png",
     alt: "Foodarena",
     name: "Foodarena",
@@ -83,7 +107,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 8,
+    id: 10,
     image: "/images/tailwindplates.png",
     alt: "Tailwindplates",
     name: "Tailwindplates",
@@ -95,7 +119,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 9,
+    id: 11,
     image: "/images/SFA.png",
     alt: "SFA",
     name: "SFA",
@@ -107,7 +131,7 @@ const data = [
     status: "completed",
   },
   {
-    id: 10,
+    id: 12,
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
@@ -119,7 +143,7 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 11,
+    id: 13,
     image: "/images/interior-decoration.png",
     alt: "Inner Lux",
     name: "Inner Lux",
