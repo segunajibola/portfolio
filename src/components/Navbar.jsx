@@ -98,82 +98,82 @@ const Navbar = ({ handleMode, darkMode }) => {
       </div> */}
 
       {/* Mobile menu */}
-     
-        <ul
-          className={`md:hidden flex flex-col justify-center items-center absolute rounded-tl-full top-0 right-0 w-full z-20 h-screen bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800 delay-100 duration-300 ease-in-out border-4 ${
-            sideNav ? "translate-x-0" : "hidden translate-x-full"
-          } 
+
+      <ul
+        className={`md:hidden flex flex-col justify-center items-center rounded-tl-full top-0 right-0 w-full z-20 fixed h-full bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800 transition delay-100 duration-500 ease-in-out border-4 ${
+          sideNav ? "translate-x-0" : "translate-x-full rotate-180"
+        } 
         `}
-        >
-          <li className="py-2 text-3xl">
-            <a
-              onClick={handleClick}
-              className="cursor-pointer"
-              href="https://blog.segunajibola.com"
-            >
-              Blog
-            </a>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#tools"
-            >
-              Tools
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink onClick={handleClick} className="cursor-pointer" to="/">
-              Home
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#about"
-            >
-              About
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#contact"
-            >
-              Contact
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#projects"
-            >
-              Projects
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <HashLink
-              onClick={handleClick}
-              className="cursor-pointer"
-              to="/#testimonials"
-            >
-              Testimonials
-            </HashLink>
-          </li>
-          <li className="py-2 text-3xl">
-            <a
-              onClick={handleClick}
-              className="cursor-pointer"
-              href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing"
-            >
-              Download Resume
-            </a>
-          </li>
-        </ul>
+      >
+        <li className="py-2 text-3xl">
+          <a
+            onClick={handleClick}
+            className="cursor-pointer"
+            href="https://blog.segunajibola.com"
+          >
+            Blog
+          </a>
+        </li>
+        <li className="py-2 text-3xl">
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#tools"
+          >
+            Tools
+          </HashLink>
+        </li>
+        <li className="py-2 text-3xl">
+          <HashLink onClick={handleClick} className="cursor-pointer" to="/">
+            Home
+          </HashLink>
+        </li>
+        <li className="py-2 text-3xl">
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#about"
+          >
+            About
+          </HashLink>
+        </li>
+        <li className="py-2 text-3xl">
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#contact"
+          >
+            Contact
+          </HashLink>
+        </li>
+        <li className="py-2 text-3xl">
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#projects"
+          >
+            Projects
+          </HashLink>
+        </li>
+        <li className="py-2 text-3xl">
+          <HashLink
+            onClick={handleClick}
+            className="cursor-pointer"
+            to="/#testimonials"
+          >
+            Testimonials
+          </HashLink>
+        </li>
+        <li className="py-2 text-3xl">
+          <a
+            onClick={handleClick}
+            className="cursor-pointer"
+            href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing"
+          >
+            Download Resume
+          </a>
+        </li>
+      </ul>
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
