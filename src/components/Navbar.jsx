@@ -91,7 +91,7 @@ const Navbar = ({ handleMode, darkMode }) => {
         } 
         `}
       >
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:-rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
           <a
             onClick={handleClick}
             className="cursor-pointer"
@@ -100,7 +100,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Blog
           </a>
         </li>
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -109,12 +109,12 @@ const Navbar = ({ handleMode, darkMode }) => {
             Tools
           </HashLink>
         </li>
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:-rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
           <HashLink onClick={handleClick} className="cursor-pointer" to="/">
             Home
           </HashLink>
         </li>
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -123,7 +123,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             About
           </HashLink>
         </li>
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:-rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -132,7 +132,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Contact
           </HashLink>
         </li>
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -141,7 +141,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Projects
           </HashLink>
         </li>
-        <li className={`${}`}>
+        <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
           <HashLink
             onClick={handleClick}
             className="cursor-pointer"
@@ -150,7 +150,7 @@ const Navbar = ({ handleMode, darkMode }) => {
             Testimonials
           </HashLink>
         </li>
-        <li className="py-2 text-3xl transition duration-300 ease-in-out hover:scale-[1.2] hover:rotate-[10deg]">
+        <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
           <a
             onClick={handleClick}
             className="cursor-pointer"
