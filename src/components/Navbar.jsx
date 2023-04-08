@@ -15,11 +15,11 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ handleMode, darkMode }) => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [sideNav, setSideNav] = useState(false);
+  const handleClick = () => setSideNav(!sideNav);
 
   return (
-    <div className="fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800">
+    <div className="fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800 border-4 border-red-500">
       <Link
         className="cursor-pointer"
         to="/"
@@ -32,55 +32,78 @@ const Navbar = ({ handleMode, darkMode }) => {
         />
       </Link>
 
-      {/* menu */}
-      <ul className="hidden md:flex space-x-10 mr-4 text-sm">
-        <li className="cursor-pointer">
-          <HashLink to="/" onClick={() => window.scrollTo(0, 0)}>
-            Home
-          </HashLink>
-        </li>
-        <li className="cursor-pointer">
-          <a href="https://blog.segunajibola.com">Blog</a>
-        </li>
-        <li className="cursor-pointer">
-          <HashLink to="/#about">About</HashLink>
-        </li>
-        <li className="cursor-pointer">
-          <HashLink to="/#tools">Tools</HashLink>
-        </li>
-        <li className="cursor-pointer">
-          <HashLink to="/#projects">Projects</HashLink>
-        </li>
-        <li className="cursor-pointer">
-          <a href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing">
-            Resume
-          </a>
-        </li>
-        <li className="cursor-pointer">
-          <HashLink to="/#contact">Contact</HashLink>
-        </li>
-      </ul>
+      <div className="flex gap-2 border-4 border-red-500">
+        {/* menu */}
+        <ul className="hidden md:flex space-x-10 mr-4 text-sm">
+          <li className="cursor-pointer">
+            <HashLink to="/" onClick={() => window.scrollTo(0, 0)}>
+              Home
+            </HashLink>
+          </li>
+          <li className="cursor-pointer">
+            <a href="https://blog.segunajibola.com">Blog</a>
+          </li>
+          <li className="cursor-pointer">
+            <HashLink to="/#about">About</HashLink>
+          </li>
+          <li className="cursor-pointer">
+            <HashLink to="/#tools">Tools</HashLink>
+          </li>
+          <li className="cursor-pointer">
+            <HashLink to="/#projects">Projects</HashLink>
+          </li>
+          <li className="cursor-pointer">
+            <a href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing">
+              Resume
+            </a>
+          </li>
+          <li className="cursor-pointer">
+            <HashLink to="/#contact">Contact</HashLink>
+          </li>
+        </ul>
 
-      {/* Dark/Light Mode */}
-      <div
-        onClick={handleMode}
-        className="z-30 ml-72 sm:ml-[30rem] md:ml-0 cursor-pointer dark:text-gray-800"
-      >
-        {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
+        <div
+          onClick={handleMode}
+          className="z-30 cursor-pointer dark:text-gray-800"
+        >
+          {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
+        </div>
       </div>
 
-      {/* Hamburger */}
       <div
         onClick={handleClick}
         className="md:hidden z-30 cursor-pointer dark:text-gray-800"
       >
-        {!nav ? <FaBars size={20} /> : <FaTimes className="-mr-[20px]" size={20} />}
+        {!sideNav ? (
+          <FaBars size={22} />
+        ) : (
+          <FaTimes size={22} className="text-white" />
+        )}
       </div>
 
+      {/* Dark/Light Mode original */}
+      {/* <div
+        onClick={handleMode}
+        className="z-30 ml-72 sm:ml-[30rem] md:ml-0 cursor-pointer dark:text-gray-800"
+      >
+        {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
+      </div> */}
+
+      {/* Hamburger original */}
+      {/* <div
+        onClick={handleClick}
+        className="md:hidden z-30 cursor-pointer dark:text-gray-800"
+      >
+        {!sideNav ? <FaBars size={20} /> : <FaTimes className="ml-[200px]" size={20} />}
+      </div> */}
+
       {/* Mobile menu */}
-      <div className={`md:hidden ${nav ? "" : "hidden"}`}>
+     
         <ul
-          className="absolute top-0 left-0 w-full z-20 h-screen bg-[#0a192f] flex flex-col justify-center items-center dark:bg-gray-100 dark:text-gray-800"
+          className={`md:hidden flex flex-col justify-center items-center absolute rounded-tl-full top-0 right-0 w-full z-20 h-screen bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800 delay-100 duration-300 ease-in-out border-4 ${
+            sideNav ? "translate-x-0" : "hidden translate-x-full"
+          } 
+        `}
         >
           <li className="py-2 text-3xl">
             <a
@@ -101,7 +124,6 @@ const Navbar = ({ handleMode, darkMode }) => {
             </HashLink>
           </li>
           <li className="py-2 text-3xl">
-            {" "}
             <HashLink onClick={handleClick} className="cursor-pointer" to="/">
               Home
             </HashLink>
@@ -152,7 +174,6 @@ const Navbar = ({ handleMode, darkMode }) => {
             </a>
           </li>
         </ul>
-      </div>
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
