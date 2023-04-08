@@ -28,9 +28,9 @@ const ProjectCard = ({ project }) => {
           </a>
           <a
             href={project.github}
-            className="inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black"
+            className={`inline-block ml-6 px-2 py-1 bg-white rounded-md shadow-md text-sm font-bold text-black ${project.github ? "" : "cursor-not-allowed"}`}
           >
-            View On Github{" "}
+            View On Github
             <FaGithub size={15} className="inline mb-1 text-black" />
           </a>
         </div>
