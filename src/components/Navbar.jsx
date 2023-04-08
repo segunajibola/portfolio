@@ -19,7 +19,7 @@ const Navbar = ({ handleMode, darkMode }) => {
   const handleClick = () => setSideNav(!sideNav);
 
   return (
-    <div className="fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800 border-4 border-red-500">
+    <div className="fixed z-20 w-full h-[53px] shadow-lg flex justify-between items-center px-4 bg-[#050f1d] dark:bg-gray-300 text-gray-300 dark:text-gray-800">
       <Link
         className="cursor-pointer"
         to="/"
@@ -100,7 +100,7 @@ const Navbar = ({ handleMode, darkMode }) => {
       {/* Mobile menu */}
 
       <ul
-        className={`md:hidden flex flex-col justify-center items-center rounded-tl-full top-0 right-0 w-full z-20 fixed h-full bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800 transition delay-100 duration-500 ease-in-out border-4 ${
+        className={`md:hidden flex flex-col justify-center items-center rounded-tl-full top-0 right-0 w-full z-20 fixed h-full bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800 transition duration-500 ease-in-out border-4 ${
           sideNav ? "translate-x-0" : "translate-x-full rotate-180"
         } 
         `}
