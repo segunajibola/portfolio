@@ -1,6 +1,16 @@
 const data = [
   {
-    id: 1,
+    image: "/images/roaddy-hero.png",
+    alt: "Roaddy",
+    name: "Roaddy",
+    description:
+      "Vehicle Rental Web App.",
+    stack: "Reactjs, TailwindCSS, Firebase",
+    link: "https://roadyy.vercel.app",
+    github: "https://github.com/segunajibola/roaddy",
+    status: "ongoing",
+  },
+  {
     image: "/images/etherchannel.png",
     alt: "Etherchanel solution service",
     name: "Etherchanel solution service",
@@ -12,7 +22,6 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 2,
     image: "/images/picbot.png",
     alt: "Picbot",
     name: "Picbot",
@@ -23,7 +32,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 3,
     image: "/images/tourcation.png",
     alt: "Tourcation App",
     name: "Tourcation",
@@ -35,7 +43,6 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 4,
     image: "/images/t-pro.png",
     alt: "T-Pro",
     name: "T-Pro Signature",
@@ -47,7 +54,6 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 5,
     image: "/images/trenp.png",
     alt: "Trenp",
     name: "Trenp",
@@ -59,7 +65,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 7,
     image: "/images/windowwidth.png",
     alt: "Window-width",
     name: "Windowwidth",
@@ -71,7 +76,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 8,
     image: "/images/dannyThompson.png",
     alt: "Danny Thompson's Twitter Portfolio",
     name: "Danny Thompson's Twitter",
@@ -83,7 +87,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 9,
     image: "/images/savelinks.png",
     alt: "Savelinks",
     name: "Savelinks",
@@ -95,7 +98,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 10,
     image: "/images/boredombot.png",
     alt: "BoredomBot",
     name: "BoredomBot",
@@ -107,7 +109,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 11,
     image: "/images/foodarena.png",
     alt: "Foodarena",
     name: "Foodarena",
@@ -119,7 +120,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 12,
     image: "/images/tailwindplates.png",
     alt: "Tailwindplates",
     name: "Tailwindplates",
@@ -131,7 +131,6 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 13,
     image: "/images/SFA.png",
     alt: "SFA",
     name: "SFA",
@@ -143,7 +142,6 @@ const data = [
     status: "completed",
   },
   {
-    id: 14,
     image: "/images/vfl.png",
     alt: "Videva Fashion Line",
     name: "Videva Fashion Line",
@@ -155,7 +153,6 @@ const data = [
     status: "ongoing",
   },
   {
-    id: 15,
     image: "/images/interior-decoration.png",
     alt: "Inner Lux",
     name: "Inner Lux",
@@ -167,4 +164,9 @@ const data = [
   },
 ];
 
-export default data;
+const updatedData = data.map((item, index) => ({
+  ...item,
+  id: index + 1
+}));
+
+export default updatedData;

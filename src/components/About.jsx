@@ -21,9 +21,7 @@ const About = () => {
             
             <p className='mt-3'>I'm intrested in design, writing, teaching, tech, and how small technical things works.</p>
 
-            <p className='mt-3'>In my free time, I read about Arsenal, tech news and latest gadgets.</p>
-            
-            <p className='mt-3'>PS: I use <a href='https://www.twitter.com/iamsegunajibola' className='text-blue-400'>Twitter</a> alot.</p>  
+            <p className='mt-3'>In my free time, I read about football, tech news and latest gadgets.</p>            
           </div>
         </div>
       </div>
