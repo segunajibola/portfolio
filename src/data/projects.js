@@ -6,7 +6,7 @@ const data = [
     description:
       "Vehicle Rental Web App.",
     stack: "Reactjs, TailwindCSS, Firebase",
-    link: "https://roadyy.vercel.app",
+    link: "https://roaddy.vercel.app",
     github: "https://github.com/segunajibola/roaddy",
     status: "ongoing",
   },
