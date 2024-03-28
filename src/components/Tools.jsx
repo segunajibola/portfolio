@@ -1,65 +1,103 @@
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import ReactImg from '../assets/react.png';
-import Nextjs from '../assets/next.png';
-import Git from '../assets/git.png';
-import GitHub from '../assets/github.png';
-import Tailwind from '../assets/tailwind.png';
-import Bootstrap from '../assets/bootstrap.png';
-import Firebase from '../assets/firebase.png';
+import React, { useRef, useState } from "react";
+import Tool from "./Tool";
 
 const Tools = () => {
+  const [filter, setFilter] = useState("");
+  const spanRef = useRef(null);
+
+  const handleFilterChange = (value) => {
+    setFilter(value === "all" ? "" : value);
+  };
+
+  const getContent = () => {
+    if (spanRef.current) {
+      const content = spanRef.current.textContent;
+      console.log(content);
+    }
+  };
+
+  const tools = [
+    { img: "/tools/html.png", name: "HTML", type: "lang" },
+    { img: "/tools/css.png", name: "CSS", type: "lang" },
+    { img: "/tools/javascript.png", name: "JavaScript", type: "lang" },
+    { img: "/tools/bootstrap.png", name: "Bootstrap", type: "fra/lib" },
+    { img: "/tools/tailwind.png", name: "TailwindCSS", type: "fra/lib" },
+    { img: "/tools/react.png", name: "React", type: "fra/lib" },
+    { img: "/tools/git.png", name: "Git", type: "vc" },
+    { img: "/tools/github.png", name: "GitHub", type: "vc" },
+    { img: "/tools/next.png", name: "Next.js", type: "fra/lib" },
+    { img: "/tools/firebase.png", name: "Firebase", type: "backend" },
+    { img: "/tools/html.png", name: "GrapQL", type: "fra/lib" },
+    { img: "/tools/html.png", name: "TanStack", type: "fra/lib" },
+    { img: "/tools/html.png", name: "Redux", type: "fra/lib" },
+    { img: "/tools/html.png", name: "npm", type: "pm" },
+    { img: "/tools/html.png", name: "pmpm", type: "pm" },
+    { img: "/tools/html.png", name: "Vite", type: "build-tool" },
+    { img: "/tools/html.png", name: "Webpack", type: "build-tool" },
+  ];
+
+  const filteredTools = filter
+    ? tools.filter((tool) => tool.type === filter)
+    : tools;
+
   return (
-    <div id='tools' className='w-full pt-32 md:pt-0 md:h-screen bg-[#0a192f] dark:bg-gray-100 text-gray-300 dark:text-gray-800'>
-      <div className='max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full'>
-          <div className='absolute md:mb-32 md:pb-48 mb-96 sm:pb-2 -mt-10 pb-96 pl-4'>
-              <p className='opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600'>Tools</p>
+    <div
+      id="tools"
+      className="w-full pt-32 md:pt-0 md:h-screen bg-[#0a192f] dark:bg-gray-100 text-gray-300 dark:text-gray-800"
+    >
+      <div className="max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full">
+        <div className="absolute md:mb-32 md:pb-48 mb-96 sm:pb-2 -mt-10 pb-96 pl-4">
+          <p className="opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600">
+            Tools
+          </p>
+        </div>
+
+        <div className="h-[50vh] z-10">
+          <div className="z-10 mt-[5rem] text-lg flex gap-2 text-gray-900">
+            <span
+              onClick={() => handleFilterChange("lang")}
+              className="bg-gray-300 p-2 m-2 rounded-lg cursor-pointer"
+            >
+              Languages
+            </span>
+            <span
+              onClick={() => handleFilterChange("fra/lib")}
+              className="bg-gray-300 p-2 m-2 rounded-lg cursor-pointer"
+            >
+              Frameworks/Libraries
+            </span>
+            <span
+              onClick={() => handleFilterChange("vc")}
+              className="bg-gray-300 p-2 m-2 rounded-lg cursor-pointer"
+            >
+              Version Control
+            </span>
+            <span
+              onClick={() => handleFilterChange("build-tool")}
+              className="bg-gray-300 p-2 m-2 rounded-lg cursor-pointer"
+            >
+              Build Tools
+            </span>
+            <span
+              onClick={() => handleFilterChange("pm")}
+              className="bg-gray-300 p-2 m-2 rounded-lg cursor-pointer"
+            >
+              Package Manager
+            </span>
+            <span
+              onClick={() => handleFilterChange("")}
+              className="bg-gray-300 p-2 m-2 rounded-lg cursor-pointer"
+            >
+              All
+            </span>
           </div>
 
-          <div className='w-full z-10 grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-10'>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-4'>HTML</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={CSS} alt="HTML icon" />
-                  <p className='my-4'>CSS</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={JavaScript} alt="HTML icon" />
-                  <p className='my-4'>JAVASCRIPT</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={Bootstrap} alt="HTML icon" />
-                  <p className='my-4'>BOOTSTRAP</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={Tailwind} alt="HTML icon" />
-                  <p className='my-4'>TAILWINDCSS</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={ReactImg} alt="HTML icon" />
-                  <p className='my-4'>REACT</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={Git} alt="HTML icon" />
-                  <p className='my-4'>GIT</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto dark:bg-gray-800' src={GitHub} alt="HTML icon" />
-                  <p className='my-4'>GITHUB</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[70px] h-[60px] mx-auto' src={Nextjs} alt="HTML icon" />
-                  <p className='my-4'>NEXT.JS</p>
-              </div>
-              <div className='rounded-lg shadow-xl shadow-gray-600 hover:scale-110 hover:shadow-xl duration-500'>
-                  <img className='w-[60px] mx-auto' src={Firebase} alt="HTML icon" />
-                  <p className='my-4'>FIREBASE</p>
-              </div>
-              
+          <div className="w-full z-20 grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-10">
+            {filteredTools.map(({ name, img }) => (
+              <Tool name={name} img={img} key={name} />
+            ))}
           </div>
+        </div>
       </div>
     </div>
   );
