@@ -24,7 +24,7 @@ const Tools = () => {
     { img: "/tools/tailwind.png", name: "TailwindCSS", type: "fra/lib" },
     { img: "/tools/tailwind.png", name: "MUI", type: "fra/lib" },
     { img: "/tools/tailwind.png", name: "ShadCN", type: "fra/lib" },
-    { img: "/tools/tailwind.png", name: "Redix", type: "fra/lib" },
+    { img: "/tools/tailwind.png", name: "Radix", type: "fra/lib" },
     { img: "/tools/react.png", name: "React", type: "fra/lib" },
     { img: "/tools/next.png", name: "Next.js", type: "fra/lib" },
     { img: "/tools/html.png", name: "Redux", type: "fra/lib" },
