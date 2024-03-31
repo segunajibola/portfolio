@@ -2,32 +2,21 @@ import React, { useRef, useState } from "react";
 import Tool from "./Tool";
 
 const Tools = () => {
-  const [filter, setFilter] = useState("");
-  const spanRef = useRef(null);
+  const [category, setCategory] = useState([]);
+  const [allCategory, setAllCategory] = useState(true);
 
-  const handleFilterChange = (value) => {
-    setFilter(value === "all" ? "" : value);
-  };
-
-  const getContent = () => {
-    if (spanRef.current) {
-      const content = spanRef.current.textContent;
-      console.log(content);
-    }
-  };
-
-  const tools = [
-    { img: "/tools/html.png", name: "HTML", type: "lang" },
-    { img: "/tools/css.png", name: "CSS", type: "lang" },
-    { img: "/tools/javascript.png", name: "JavaScript", type: "lang" },
+  const toolsArray = [
+    { img: "/tools/html.png", name: "HTML", type: "language" },
+    { img: "/tools/css.png", name: "CSS", type: "language" },
+    { img: "/tools/javascript.png", name: "JavaScript", type: "language" },
     { img: "/tools/bootstrap.png", name: "Bootstrap", type: "fra/lib" },
     { img: "/tools/tailwind.png", name: "TailwindCSS", type: "fra/lib" },
     { img: "/tools/tailwind.png", name: "MUI", type: "fra/lib" },
     { img: "/tools/tailwind.png", name: "ShadCN", type: "fra/lib" },
     { img: "/tools/tailwind.png", name: "Radix", type: "fra/lib" },
     { img: "/tools/react.png", name: "React", type: "fra/lib" },
-    { img: "/tools/next.png", name: "Next.js", type: "fra/lib" },
-    { img: "/tools/html.png", name: "Redux", type: "fra/lib" },
+    { img: "/tools/next.png", name: "Next.js", type: "framework" },
+    { img: "/tools/html.png", name: "Redux", type: "library" },
     { img: "/tools/html.png", name: "TypeScript", type: "preprocessors" },
     { img: "/tools/html.png", name: "SASS", type: "preprocessors" },
     { img: "/tools/git.png", name: "Git", type: "vc" },
@@ -39,11 +28,26 @@ const Tools = () => {
     { img: "/tools/html.png", name: "pmpm", type: "pm" },
     { img: "/tools/html.png", name: "TanStack", type: "other" },
     { img: "/tools/html.png", name: "GrapQL", type: "other" },
+    { img: "/tools/html.png", name: "Vercel", type: "other" },
   ];
 
-  const filteredTools = filter
-    ? tools.filter((tool) => tool.type === filter)
-    : tools;
+  const toggleCategory = (value) => {
+    if (value === "") {
+      setCategory([]);
+      setAllCategory(true);
+    } else {
+      setAllCategory(false);
+      setCategory((prevCategory) =>
+        prevCategory.includes(value)
+          ? prevCategory.filter((item) => item !== value)
+          : [...prevCategory, value]
+      );
+    }
+  };
+
+  const filteredCategory = category.length
+    ? toolsArray.filter((tool) => category.includes(tool.type))
+    : toolsArray;
 
   return (
     <div
@@ -60,63 +64,89 @@ const Tools = () => {
         <div className="h-[50vh] z-10">
           <div className="z-10 mt-[5rem] flex justify-center items-center text-center gap-[2px] text-gray-900">
             <span
-              onClick={() => handleFilterChange("")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                allCategory ? "bg-orange-400" : ""
+              }`}
+              onClick={() => toggleCategory("")}
             >
               All
             </span>
             <span
-              onClick={() => handleFilterChange("lang")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("language")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("language") ? "bg-orange-400" : ""
+              }`}
             >
               Languages
             </span>
             <span
-              onClick={() => handleFilterChange("fra/lib")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("framework")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("framework") ? "bg-orange-400" : ""
+              }`}
             >
-              Frameworks/Libraries
+              Frameworks
             </span>
             <span
-              onClick={() => handleFilterChange("preprocessors")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("library")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("library") ? "bg-orange-400" : ""
+              }`}
+            >
+              Libraries
+            </span>
+            <span
+              onClick={() => toggleCategory("preprocessors")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("preprocessors") ? "bg-orange-400" : ""
+              }`}
             >
               Preprocessors
             </span>
             <span
-              onClick={() => handleFilterChange("vc")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("vc")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("vc") ? "bg-orange-400" : ""
+              }`}
             >
               Version Control
             </span>
             <span
-              onClick={() => handleFilterChange("build-tool")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("build-tool")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("build-tool") ? "bg-orange-400" : ""
+              }`}
             >
-              Build Tools
+              Build category
             </span>
             <span
-              onClick={() => handleFilterChange("pm")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("pm")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("pm") ? "bg-orange-400" : ""
+              }`}
             >
               Package Manager
             </span>
             <span
-              onClick={() => handleFilterChange("backend")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("backend")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("backend") ? "bg-orange-400" : ""
+              }`}
             >
               Backend Services
             </span>
             <span
-              onClick={() => handleFilterChange("other")}
-              className="bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer"
+              onClick={() => toggleCategory("other")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("other") ? "bg-orange-400" : ""
+              }`}
             >
               Other
             </span>
           </div>
 
           <div className="w-full z-20 grid grid-cols-4 sm:grid-cols-5 gap-3 text-center py-10">
-            {filteredTools.map(({ name, img }) => (
+            {filteredCategory.map(({ name, img }) => (
               <Tool name={name} img={img} key={name} />
             ))}
           </div>
