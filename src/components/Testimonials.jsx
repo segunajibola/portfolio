@@ -43,7 +43,7 @@ const Testimonials = () => {
               className="w-[24.5rem] sm:w-[30rem] m-auto md:w-[38rem]"
             >
               {testimonials.map((testimonial) => (
-                <SwiperSlide className="md:mt-1 p-2">
+                <SwiperSlide className="md:mt-1 p-2" key={testimonial.id}>
                   <figure className="bg-gray-700 dark:bg-gray-300 grid rounded-xl p-3 shadow-lg shadow-gray-700">
                     <img
                       className="w-32 h-32 rounded-full mx-auto"
