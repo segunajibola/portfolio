@@ -63,14 +63,12 @@ const Navbar = ({ handleMode, darkMode }) => {
       </ul>
 
       <div className="flex gap-2">
-        {/* Dark/Light Mode */}
         <div
           onClick={handleMode}
           className="z-30 cursor-pointer dark:text-gray-800"
         >
           {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
         </div>
-        {/* Hamburger */}
         <div
           onClick={handleClick}
           className="md:hidden z-30 cursor-pointer dark:text-gray-800"
