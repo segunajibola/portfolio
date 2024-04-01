@@ -13,7 +13,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import styles from "../../styles/"
+import styles from "../../styles/";
 
 const Navbar = ({ handleMode, darkMode }) => {
   const [sideNav, setSideNav] = useState(false);
@@ -53,7 +53,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           <HashLink to="/#projects">Projects</HashLink>
         </li>
         <li className="cursor-pointer">
-          <a href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing">
+          <a href=" https://drive.google.com/file/d/1Kel5_dyLuo-qTmlSmjTQZ0Gt46hjuPT5/view?usp=drive_link">
             Resume
           </a>
         </li>
