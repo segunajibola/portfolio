@@ -1,4 +1,3 @@
-import profileImg from "../assets/newPr.png";
 import {
   FaWhatsapp,
   FaGithub,
@@ -33,12 +32,12 @@ const Home = () => {
             businesses to scale.
           </p>
           <div className="flex w-full">
-            <button className="text-white text-xs border-2 border-gray-600 px-2 py-2 my-2 flex items-center hover:bg-gray-700 hover:border-gray-300 dark:text-gray-800 dark:hover:text-gray-100 dark:hover:bg-gray-500 dark:hover:border-gray-900">
+            <button className="text-white border-2 border-gray-600 px-3 py-3 my-2 flex items-center hover:bg-gray-700 hover:border-gray-300 dark:text-gray-800 dark:hover:text-gray-100 dark:hover:bg-gray-500 dark:hover:border-gray-900">
               <HashLink to="/#projects" className="cursor-pointer">
                 View Projects
               </HashLink>
             </button>
-            <div className="lg:hidden inline-flex text-2xl space-x-3 ml-8 mt-4">
+            <div className="lg:hidden inline-flex text-2xl space-x-3 ml-6 mt-4">
               <a href="https://www.twitter.com/iamsegunajibola">
                 <FaTwitter size={30} className="text-blue-500" />
               </a>
