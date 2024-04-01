@@ -30,7 +30,7 @@ const Home = () => {
           </h2>
           <p className="text-[#8892b0] py-4 max-w-[700px] dark:text-gray-700">
             I'm focused on building responsive web apps for creatives and small
-            businesses trying to scale.
+            businesses to scale.
           </p>
           <div className="flex w-full">
             <button className="text-white text-xs border-2 border-gray-600 px-2 py-2 my-2 flex items-center hover:bg-gray-700 hover:border-gray-300 dark:text-gray-800 dark:hover:text-gray-100 dark:hover:bg-gray-500 dark:hover:border-gray-900">

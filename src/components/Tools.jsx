@@ -1,48 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Tool from "./Tool";
+import { toolsArray } from "../data";
 
 const Tools = () => {
   const [category, setCategory] = useState([]);
   const [allCategory, setAllCategory] = useState(true);
-
-  const toolsArray = [
-    { img: "/tools/html.png", name: "HTML", type: "language" },
-    { img: "/tools/css.png", name: "CSS", type: "language" },
-    { img: "/tools/javascript.png", name: "JavaScript", type: "language" },
-    { img: "/tools/bootstrap.png", name: "Bootstrap", type: "framework" },
-    { img: "/tools/tailwind.png", name: "TailwindCSS", type: "framework" },
-    { img: "/tools/mui.png", name: "MUI", type: "library" },
-    { img: "/tools/shadcn.png", name: "ShadCN", type: "library" },
-    { img: "/tools/radix.png", name: "Radix", type: "library" },
-    {
-      img: "/tools/framer-motion.jpeg",
-      name: "Framer Motion",
-      type: "library",
-    },
-    { img: "/tools/AOS.png", name: "AOS", type: "library" },
-    { img: "/tools/redux.png", name: "Redux", type: "library" },
-    { img: "/tools/fullpage.png", name: "fullpage", type: "library" },
-    { img: "/tools/axios.png", name: "Axios", type: "library" },
-    { img: "/tools/swiper.svg", name: "Swiper", type: "library" },
-    { img: "/tools/react-icons.svg", name: "React Icons", type: "library" },
-    { img: "/tools/react.png", name: "React", type: "framework" },
-    { img: "/tools/next.png", name: "Next.js", type: "framework" },
-    { img: "/tools/typescript.png", name: "TypeScript", type: "preprocessors" },
-    { img: "/tools/sass.png", name: "SASS", type: "preprocessors" },
-    { img: "/tools/git.png", name: "Git", type: "vc" },
-    { img: "/tools/github.png", name: "GitHub", type: "vc" },
-    { img: "/tools/vite.png", name: "Vite", type: "build-tool" },
-    { img: "/tools/webpack.png", name: "Webpack", type: "build-tool" },
-    { img: "/tools/firebase.png", name: "Firebase", type: "backend" },
-    { img: "/tools/npm.png", name: "npm", type: "pm" },
-    { img: "/tools/pmpm.svg", name: "pmpm", type: "pm" },
-    { img: "/tools/tanstack.jpg", name: "TanStack", type: "other" },
-    { img: "/tools/vercel.png", name: "Vercel", type: "hosting" },
-    { img: "/tools/github-pages.jpeg", name: "GitHub Pages", type: "hosting" },
-    { img: "/tools/netlify.jpg", name: "Netlify", type: "hosting" },
-    { img: "/tools/graphql.png", name: "GraphQL", type: "other" },
-    { img: "/tools/apollo.png", name: "Apollo", type: "other" },
-  ];
 
   const toggleCategory = (value) => {
     if (value === "") {
@@ -65,17 +27,20 @@ const Tools = () => {
   return (
     <div
       id="tools"
-      className="w-full pt-32 md:pt-0 md:h-screen bg-[#0a192f] dark:bg-gray-100 text-gray-300 dark:text-gray-800"
+      className="relative w-full pt-24 md:pt-0 md:h-screen bg-[#0a192f] dark:bg-gray-100 text-gray-300 dark:text-gray-800"
     >
       <div className="max-w-[950px] mx-auto p-4 flex flex-col justify-center h-full">
-        <div className="absolute md:mb-32 md:pb-48 mb-96 sm:pb-2 -mt-10 pb-96 pl-4">
+        <div className="absolute top-16 pl-4">
           <p className="opacity-10 text-9xl font-bold inline border-b-4 border-yellow-600">
             Tools
           </p>
         </div>
 
         <div className="h-auto z-10">
-          <div className="z-10 mt-[5rem] flex flex-wrap justify-center items-center text-center gap-[2px] text-gray-900">
+          <div className="mt-8 text-2xl">
+            <p>What I use</p>
+          </div>
+          <div className="mt-[1rem] flex flex-wrap justify-center items-center text-center gap-[2px] text-gray-900">
             <span
               className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
                 allCategory ? "bg-orange-400" : ""

@@ -32,8 +32,6 @@ const Navbar = ({ handleMode, darkMode }) => {
           style={{ width: "40px", height: "40px", borderRadius: "50px" }}
         />
       </Link>
-
-      {/* menu */}
       <ul className="hidden md:flex space-x-10 mr-4 text-sm">
         <li className="cursor-pointer">
           <HashLink to="/" onClick={() => window.scrollTo(0, 0)}>

@@ -1,4 +1,4 @@
-const data = [
+const projectData = [
   {
     image: "/images/roaddy-hero.png",
     alt: "Roaddy",
@@ -164,9 +164,65 @@ const data = [
   },
 ];
 
-const updatedData = data.map((item, index) => ({
+export const project = projectData.map((item, index) => ({
   ...item,
   id: index + 1
 }));
 
-export default updatedData;
+export const testimonials = [
+  {
+    id: 1,
+    image: "https://media.licdn.com/dms/image/D4D03AQGuy-LglJ4aFg/profile-displayphoto-shrink_800_800/0/1672778499574?e=1717632000&v=beta&t=36pMGQqx_yl7-Aa49uB7rWt8VQrYd1dMPxpcC796RxQ",
+    text: "Segun is a great developer who pays much attention to details and it reflects in his work.",
+    name: "Samuel (Zyge) Sakinbarnes",
+    position: "Information Technology Officer at SMALLYFARES",
+  },
+  {
+    id: 2,
+    image: "https://media.licdn.com/dms/image/C5603AQGpYcmxDKTAjQ/profile-displayphoto-shrink_800_800/0/1629096163723?e=1717632000&v=beta&t=cXsVF6BCAvj3IRRPHmRnQlUdk7CAemqZg0jdiCUQseg",
+    text: "I have had the privilege of working with Segun. He is not only a skilled engineer but also a great team player. He is a success-driven asset to any team displaying an in-depth knowledge of HTML/CSS, JavaScript, React.js, technical writing, and much more. I highly recommend him.",
+    name: "Tosin Oladeji",
+    position: "Backend Engineer",    
+  },
+]
+
+export const toolsArray = [
+  { img: "/tools/html.png", name: "HTML", type: "language" },
+  { img: "/tools/css.png", name: "CSS", type: "language" },
+  { img: "/tools/javascript.png", name: "JavaScript", type: "language" },
+  { img: "/tools/bootstrap.png", name: "Bootstrap", type: "framework" },
+  { img: "/tools/tailwind.png", name: "TailwindCSS", type: "framework" },
+  { img: "/tools/mui.png", name: "MUI", type: "library" },
+  { img: "/tools/shadcn.png", name: "ShadCN", type: "library" },
+  { img: "/tools/radix.png", name: "Radix", type: "library" },
+  {
+    img: "/tools/framer-motion.jpeg",
+    name: "Framer Motion",
+    type: "library",
+  },
+  { img: "/tools/AOS.png", name: "AOS", type: "library" },
+  { img: "/tools/redux.png", name: "Redux", type: "library" },
+  { img: "/tools/fullpage.png", name: "fullpage", type: "library" },
+  { img: "/tools/axios.png", name: "Axios", type: "library" },
+  { img: "/tools/swiper.svg", name: "Swiper", type: "library" },
+  { img: "/tools/react-icons.svg", name: "React Icons", type: "library" },
+  { img: "/tools/react.png", name: "React", type: "framework" },
+  { img: "/tools/next.png", name: "Next.js", type: "framework" },
+  { img: "/tools/typescript.png", name: "TypeScript", type: "preprocessors" },
+  { img: "/tools/sass.png", name: "SASS", type: "preprocessors" },
+  { img: "/tools/git.png", name: "Git", type: "vc" },
+  { img: "/tools/github.png", name: "GitHub", type: "vc" },
+  { img: "/tools/vite.png", name: "Vite", type: "build-tool" },
+  { img: "/tools/webpack.png", name: "Webpack", type: "build-tool" },
+  { img: "/tools/firebase.png", name: "Firebase", type: "backend" },
+  { img: "/tools/npm.png", name: "npm", type: "pm" },
+  { img: "/tools/pmpm.svg", name: "pmpm", type: "pm" },
+  { img: "/tools/tanstack.jpg", name: "TanStack", type: "other" },
+  { img: "/tools/vercel.png", name: "Vercel", type: "hosting" },
+  { img: "/tools/github-pages.jpeg", name: "GitHub Pages", type: "hosting" },
+  { img: "/tools/netlify.jpg", name: "Netlify", type: "hosting" },
+  { img: "/tools/graphql.png", name: "GraphQL", type: "other" },
+  { img: "/tools/apollo.png", name: "Apollo", type: "other" },
+];
+
+

@@ -1,5 +1,4 @@
-import shegzy from "../assets/logo.png";
-import testimonials from "../data/testimonials";
+import { testimonials } from "../data/";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,18 +13,18 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="w-full text-gray-300 overflow-hidden bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800"
+      className="relative pt-24 w-full text-gray-300 overflow-hidden bg-[#0a192f] dark:bg-gray-100 dark:text-gray-800"
     >
-      <div className="flex flex-col justify-center items-center w-full h-full pt-20">
+      <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full">
           <div className="absolute pb-8 pl-4">
-            <p className="text-[4.5rem] sm:text-[7rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600">
+            <p className="text-7xl sm:text-[7rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600">
               Testimonials
             </p>
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid grid-cols sm:grid-cols-1 gap-8 px-4">
-          <div className="mt-16 md:mt-20 md:ml-10 text-2xl font-bold md:text-left">
+          <div className="mt-16 md:mt-20 md:ml-10 text-2xl md:text-left">
             <p>What others are saying.</p>
           </div>
           <Swiper
