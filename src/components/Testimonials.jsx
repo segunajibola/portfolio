@@ -28,43 +28,43 @@ const Testimonials = () => {
           <div className="mt-16 md:mt-20 md:ml-10 text-2xl font-bold md:text-left">
             <p>What others are saying.</p>
           </div>
-            <Swiper
-              spaceBetween={30}
-              centeredSlides={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
-              modules={[Autoplay, Pagination, Navigation]}
-              className="w-[24.5rem] sm:w-[30rem] m-auto md:w-[38rem]"
-            >
-              {testimonials.map((testimonial) => (
-                <SwiperSlide className="md:mt-1 p-2" key={testimonial.id}>
-                  <figure className="bg-gray-700 dark:bg-gray-300 grid rounded-xl p-3 shadow-lg shadow-gray-700">
-                    <img
-                      className="w-32 h-32 rounded-full mx-auto"
-                      src={shegzy}
-                      alt=""
-                    />
-                    <div className="pt-4 text-center space-y-3">
-                      <blockquote className="mx-auto">
-                        <p className="text-lg font-semibold text-gray-300 mx-4 dark:text-gray-900">
-                          {testimonial.text}
-                        </p>
-                      </blockquote>
-                      <figcaption className="font-medium text-gray-500 dark:text-gray-800">
-                        <div className="">{testimonial.name}</div>
-                        <div className="mb-2">{testimonial.position}</div>
-                      </figcaption>
-                    </div>
-                  </figure>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="w-[95%] sm:w-[30rem] m-auto md:w-[38rem]"
+          >
+            {testimonials.map((testimonial) => (
+              <SwiperSlide className="md:mt-1 p-2" key={testimonial.id}>
+                <figure className="bg-gray-700 dark:bg-gray-300 grid rounded-xl p-3 shadow-lg shadow-gray-700">
+                  <img
+                    className="w-32 h-32 rounded-full mx-auto"
+                    src={testimonial.image}
+                    alt={`${testimonial.name} picture`}
+                  />
+                  <div className="pt-4 text-center space-y-3">
+                    <blockquote className="mx-auto">
+                      <p className="text-lg font-semibold text-gray-300 mx-4 dark:text-gray-900">
+                        {testimonial.text}
+                      </p>
+                    </blockquote>
+                    <figcaption className="font-medium text-gray-500 dark:text-gray-800">
+                      <div className="">{testimonial.name}</div>
+                      <div className="mb-2">{testimonial.position}</div>
+                    </figcaption>
+                  </div>
+                </figure>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

@@ -9,26 +9,39 @@ const Tools = () => {
     { img: "/tools/html.png", name: "HTML", type: "language" },
     { img: "/tools/css.png", name: "CSS", type: "language" },
     { img: "/tools/javascript.png", name: "JavaScript", type: "language" },
-    { img: "/tools/bootstrap.png", name: "Bootstrap", type: "fra/lib" },
-    { img: "/tools/tailwind.png", name: "TailwindCSS", type: "fra/lib" },
-    { img: "/tools/tailwind.png", name: "MUI", type: "fra/lib" },
-    { img: "/tools/tailwind.png", name: "ShadCN", type: "fra/lib" },
-    { img: "/tools/tailwind.png", name: "Radix", type: "fra/lib" },
-    { img: "/tools/react.png", name: "React", type: "fra/lib" },
+    { img: "/tools/bootstrap.png", name: "Bootstrap", type: "framework" },
+    { img: "/tools/tailwind.png", name: "TailwindCSS", type: "framework" },
+    { img: "/tools/mui.png", name: "MUI", type: "library" },
+    { img: "/tools/shadcn.png", name: "ShadCN", type: "library" },
+    { img: "/tools/radix.png", name: "Radix", type: "library" },
+    {
+      img: "/tools/framer-motion.jpeg",
+      name: "Framer Motion",
+      type: "library",
+    },
+    { img: "/tools/AOS.png", name: "AOS", type: "library" },
+    { img: "/tools/redux.png", name: "Redux", type: "library" },
+    { img: "/tools/fullpage.png", name: "fullpage", type: "library" },
+    { img: "/tools/axios.png", name: "Axios", type: "library" },
+    { img: "/tools/swiper.svg", name: "Swiper", type: "library" },
+    { img: "/tools/react-icons.svg", name: "React Icons", type: "library" },
+    { img: "/tools/react.png", name: "React", type: "framework" },
     { img: "/tools/next.png", name: "Next.js", type: "framework" },
-    { img: "/tools/html.png", name: "Redux", type: "library" },
-    { img: "/tools/html.png", name: "TypeScript", type: "preprocessors" },
-    { img: "/tools/html.png", name: "SASS", type: "preprocessors" },
+    { img: "/tools/typescript.png", name: "TypeScript", type: "preprocessors" },
+    { img: "/tools/sass.png", name: "SASS", type: "preprocessors" },
     { img: "/tools/git.png", name: "Git", type: "vc" },
     { img: "/tools/github.png", name: "GitHub", type: "vc" },
-    { img: "/tools/html.png", name: "Vite", type: "build-tool" },
-    { img: "/tools/html.png", name: "Webpack", type: "build-tool" },
+    { img: "/tools/vite.png", name: "Vite", type: "build-tool" },
+    { img: "/tools/webpack.png", name: "Webpack", type: "build-tool" },
     { img: "/tools/firebase.png", name: "Firebase", type: "backend" },
-    { img: "/tools/html.png", name: "npm", type: "pm" },
-    { img: "/tools/html.png", name: "pmpm", type: "pm" },
-    { img: "/tools/html.png", name: "TanStack", type: "other" },
-    { img: "/tools/html.png", name: "GrapQL", type: "other" },
-    { img: "/tools/html.png", name: "Vercel", type: "other" },
+    { img: "/tools/npm.png", name: "npm", type: "pm" },
+    { img: "/tools/pmpm.svg", name: "pmpm", type: "pm" },
+    { img: "/tools/tanstack.jpg", name: "TanStack", type: "other" },
+    { img: "/tools/vercel.png", name: "Vercel", type: "hosting" },
+    { img: "/tools/github-pages.jpeg", name: "GitHub Pages", type: "hosting" },
+    { img: "/tools/netlify.jpg", name: "Netlify", type: "hosting" },
+    { img: "/tools/graphql.png", name: "GraphQL", type: "other" },
+    { img: "/tools/apollo.png", name: "Apollo", type: "other" },
   ];
 
   const toggleCategory = (value) => {
@@ -61,8 +74,8 @@ const Tools = () => {
           </p>
         </div>
 
-        <div className="h-[50vh] z-10">
-          <div className="z-10 mt-[5rem] flex justify-center items-center text-center gap-[2px] text-gray-900">
+        <div className="h-auto z-10">
+          <div className="z-10 mt-[5rem] flex flex-wrap justify-center items-center text-center gap-[2px] text-gray-900">
             <span
               className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
                 allCategory ? "bg-orange-400" : ""
@@ -117,7 +130,7 @@ const Tools = () => {
                 category.includes("build-tool") ? "bg-orange-400" : ""
               }`}
             >
-              Build category
+              Build tools
             </span>
             <span
               onClick={() => toggleCategory("pm")}
@@ -136,6 +149,14 @@ const Tools = () => {
               Backend Services
             </span>
             <span
+              onClick={() => toggleCategory("hosting")}
+              className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
+                category.includes("hosting") ? "bg-orange-400" : ""
+              }`}
+            >
+              Hosting Services
+            </span>
+            <span
               onClick={() => toggleCategory("other")}
               className={`bg-gray-300 py-1 px-2 m-1 rounded-lg cursor-pointer ${
                 category.includes("other") ? "bg-orange-400" : ""
@@ -146,8 +167,8 @@ const Tools = () => {
           </div>
 
           <div className="w-full z-20 grid grid-cols-4 sm:grid-cols-5 gap-3 text-center py-10">
-            {filteredCategory.map(({ name, img }) => (
-              <Tool name={name} img={img} key={name} />
+            {filteredCategory.map(({ name, img }, index) => (
+              <Tool name={name} img={img} key={index} />
             ))}
           </div>
         </div>
