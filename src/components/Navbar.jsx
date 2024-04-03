@@ -51,7 +51,7 @@ const Navbar = ({ handleMode, darkMode }) => {
           <HashLink to="/#projects">Projects</HashLink>
         </li>
         <li className="cursor-pointer">
-          <a href=" https://drive.google.com/file/d/1Kel5_dyLuo-qTmlSmjTQZ0Gt46hjuPT5/view?usp=drive_link">
+          <a href="https://drive.google.com/file/d/1Kel5_dyLuo-qTmlSmjTQZ0Gt46hjuPT5/view?usp=drive_link">
             Resume
           </a>
         </li>

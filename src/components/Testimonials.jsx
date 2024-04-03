@@ -18,7 +18,7 @@ const Testimonials = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full">
           <div className="absolute pb-8 pl-4">
-            <p className="text-7xl sm:text-[7rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600">
+            <p className="text-[5rem] md:text-8xl font-bold inline tracking-tighter opacity-10 border-b-4 border-yellow-600">
               Testimonials
             </p>
           </div>

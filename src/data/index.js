@@ -4,10 +4,32 @@ const projectData = [
     alt: "Roaddy",
     name: "Roaddy",
     description:
-      "Vehicle Rental Web App.",
+      "Vehicle Rental Web App",
     stack: "Reactjs, TailwindCSS, Firebase",
     link: "https://roaddy.vercel.app",
     github: "https://github.com/segunajibola/roaddy",
+    status: "ongoing",
+  },
+  {
+    image: "/images/vpoint.png",
+    alt: "Vpoint",
+    name: "Vpoint",
+    description:
+      "Ecommerce Landing Page",
+    stack: "Nextjs, TailwindCSS",
+    link: "https://landing.vpointng.com/",
+    github: "",
+    status: "completed",
+  },
+  {
+    image: "/images/daily-todos.png",
+    alt: "Daily-Todos",
+    name: "Daily-Todos",
+    description:
+      "Daily Todos web app",
+    stack: "Nextjs, TypeScript, TailwindCSS",
+    link: "https://todos-daily.vercel.app/",
+    github: "https://github.com/segunajibola/todos-daily/",
     status: "ongoing",
   },
   {
